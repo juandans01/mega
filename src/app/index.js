@@ -5,7 +5,10 @@ import { global } from '../helpers/styleHelper'
 import Header from './scenes/Header'
 import Hero from './scenes/Hero'
 import Culture from './scenes/Culture'
+import Solutions from './scenes/Solutions'
 import Clients from './scenes/Clients'
+import Consumers from './scenes/Consumers'
+import Contact from './scenes/Contact'
 
 injectGlobal`${global(theme)}` // eslint-disable-line
 
@@ -16,9 +19,12 @@ class App extends Component {
       <ThemeProvider theme={theme}>
         <div>
           <Header />
-          <Hero />
-          {/* <Culture /> */}
+          <Hero />          
+          <Culture />
+          <Solutions />
+          <Consumers />
           <Clients />
+          <Contact />
         </div>
       </ThemeProvider>                      
     );

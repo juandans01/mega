@@ -7,8 +7,8 @@ const Wrapper = styled.div`
 `
 
 const Title = styled.div`
-  font-size: 22px;
-  padding-bottom: 5px;
+  font-size: 16px;
+  padding-bottom: 10px;
 `
 
 const Separator = styled.div`
@@ -18,6 +18,7 @@ const Separator = styled.div`
 `
 
 const Content = styled.div`
+  font-size: 14px;
   padding-top: 20px;
 `
 

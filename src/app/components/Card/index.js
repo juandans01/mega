@@ -9,6 +9,7 @@ const Wrapper = styled.div`
   -webkit-box-shadow: 7px 7px 16px -1px rgba(0,0,0,0.41);
   -moz-box-shadow: 7px 7px 16px -1px rgba(0,0,0,0.41);
   box-shadow: 7px 7px 16px -1px rgba(0,0,0,0.41);
+  background-color: white;
 `
 
 const Cover = styled.div`
