@@ -6,7 +6,7 @@ export default class Hero extends Component {
   
   render() {
     return (
-      <Wrapper>
+      <Wrapper id='hero'>
         <p>
           Inteligencia de mercado,<br/>
           tecnología y flexibilidad para<br/>

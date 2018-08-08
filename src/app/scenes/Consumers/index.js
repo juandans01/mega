@@ -7,7 +7,7 @@ export default class Consumers extends Component {
 
   render() {
     return (
-      <Wrapper>
+      <Wrapper id="consumers">
         <div className='pure-g'>
           <div className='pure-u-1'>
             <div className='title'>Consumidores</div>
@@ -17,27 +17,49 @@ export default class Consumers extends Component {
             <ConsumersWrapper>
               <Row>
                 <div>
-                  <Picture 
-                    src="http://via.placeholder.com/150x150"
-                  />
+                  <Picture>
+                    <img src="http://via.placeholder.com/150x150"/>
+                  </Picture>
                   <TextBox
                     title={(
                       <div>Micro Grupos Focales en<br/>
                       Instagram / Skype</div>
                     )}
+                    titleAlign="center"
+                    separatorAlign="center"
+                    contentAlign="center" 
                     content="Conecta con Millenials en real time para conversar
                     tópicos más tradicionales (como un focus)"
                   />
                 </div>
                 <div>
-                  <Picture 
-                    src="http://via.placeholder.com/150x150"
+                  <Picture>
+                    <img src="http://via.placeholder.com/150x150"/>
+                  </Picture>
+                  <TextBox
+                    title={(
+                      <div>Micro Grupos Focales en<br/>
+                      Instagram / Skype</div>
+                    )}
+                    titleAlign="center"
+                    separatorAlign="center"
+                    contentAlign="center"
+                    content="Conecta con Millenials en real time para conversar
+                    tópicos más tradicionales (como un focus)"
                   />
+                </div>
+                <div>
+                  <Picture>
+                    <img src="http://via.placeholder.com/150x150"/>
+                  </Picture>
                   <TextBox
                     title={(
                       <div>Videos Etnográficos<br/>
                       en Whatsapp</div>
                     )}
+                    titleAlign="center"
+                    separatorAlign="center"
+                    contentAlign="center"
                     content="Construye un espacio ágil, dinámico y privado
                     para responder cosas tácticas como en profundidad"
                   />              
@@ -45,29 +67,51 @@ export default class Consumers extends Component {
               </Row>
               <Row>
                 <div>
-                  <Picture 
-                    src="http://via.placeholder.com/150x150"
-                  />
+                  <Picture>
+                    <img src="http://via.placeholder.com/150x150"/>
+                  </Picture>
                   <TextBox
                     title={(
-                      <div>Encuestas Online interactivas</div>
+                      <div>Micro Grupos Focales en<br/>
+                      Instagram / Skype</div>
                     )}
-                    content="Encuestas pensadas y adaptadas para una
-                    participación comprometida. Dinámicas,
-                    iconográficas y dirigidas a todo tipo de target"
+                    titleAlign="center"
+                    separatorAlign="center"
+                    contentAlign="center" 
+                    content="Conecta con Millenials en real time para conversar
+                    tópicos más tradicionales (como un focus)"
                   />
                 </div>
                 <div>
-                  <Picture 
-                    src="http://via.placeholder.com/150x150"
-                  />
+                  <Picture>
+                    <img src="http://via.placeholder.com/150x150"/>
+                  </Picture>
                   <TextBox
                     title={(
-                      <div>Comunidades Online</div>
+                      <div>Micro Grupos Focales en<br/>
+                      Instagram / Skype</div>
                     )}
-                    content="Promueve el encuentro grupal tipo red social.
-                    Para todo tipo exploración, realizar actividades
-                    audiovisuales, tareas, co-creación, hábitos, testeos."
+                    titleAlign="center"
+                    separatorAlign="center"
+                    contentAlign="center"
+                    content="Conecta con Millenials en real time para conversar
+                    tópicos más tradicionales (como un focus)"
+                  />
+                </div>
+                <div>
+                  <Picture>
+                    <img src="http://via.placeholder.com/150x150"/>
+                  </Picture>
+                  <TextBox
+                    title={(
+                      <div>Videos Etnográficos<br/>
+                      en Whatsapp</div>
+                    )}
+                    titleAlign="center"
+                    separatorAlign="center"
+                    contentAlign="center"
+                    content="Construye un espacio ágil, dinámico y privado
+                    para responder cosas tácticas como en profundidad"
                   />              
                 </div>                                
               </Row>

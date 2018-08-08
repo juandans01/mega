@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
 
+// Break in case of change of mind
+// border-radius: 30px;
+// border-radius: 15px 15px 0 0;
+
 const Wrapper = styled.div`
   margin: 5px;
   min-height: 245px;
-  width: 210px;
-  border-radius: 30px;
+  width: 220px;
   -webkit-box-shadow: 7px 7px 16px -1px rgba(0,0,0,0.41);
   -moz-box-shadow: 7px 7px 16px -1px rgba(0,0,0,0.41);
   box-shadow: 7px 7px 16px -1px rgba(0,0,0,0.41);
@@ -13,8 +16,7 @@ const Wrapper = styled.div`
 `
 
 const Cover = styled.div`
-  background: ${props => props.image ? "url(" + props.image + ") no-repeat 50% 50% / cover" : '#ececec'};
-  border-radius: 15px 15px 0 0;
+  background: ${props => props.image ? "url(" + props.image + ") no-repeat 50% 50% / cover" : '#ececec'};  
   height: 120px;
 `
 
@@ -23,9 +25,9 @@ const Title = styled.div`
   color: ${props => props.theme.blueShade};
   font-size: 12px;
   letter-spacing: 3px;
-  padding: 15px;
-  text-align: center;
-  align-self: center;
+  padding: 15px 5px;  
+  align-self: ${props => props.align};
+  font-weight: 900;
 `
 
 const Subtitle = styled.div`
@@ -49,7 +51,10 @@ const TextWrapper = styled.div`
 `
 
 const Content = styled.div`
-  margin-bottom: 30px;
+  margin: 10px 0 25px 0;
+  padding-left: 5px;
+  line-height: 1.5;
+  font-size: 12px;
 `
 
 export default class Card extends Component {
@@ -62,7 +67,9 @@ export default class Card extends Component {
           />
           <TextWrapper>
             { this.props.title && (
-              <Title>
+              <Title
+                align={this.props.titleFlex ? this.props.titleFlex : 'center'}
+              >
                 {this.props.title}
               </Title>
             )}

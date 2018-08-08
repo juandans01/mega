@@ -1,6 +1,7 @@
 import { css } from 'styled-components'
 import { normalize } from 'polished'
 import { fadeInKeyframe } from './keyframes'
+import { animateScroll } from 'react-scroll'
 import PureCSS from './vendor/PureCSS'
 
 export function fadeIn () {
@@ -73,3 +74,20 @@ export const global = (theme) => css`
     font-weight: 700;
   }
 ` 
+
+export const scrollTo = (nodeId) => {
+  console.log(nodeId)
+  setTimeout(() => {
+    const element = document.getElementById(nodeId)
+    console.log(element)
+    if (!element) return false
+    const windowOffsetTop = (window.pageYOffset || document.documentElement.scrollTop) - (document.documentElement.clientTop || 0)
+    const value = element.getBoundingClientRect().top + windowOffsetTop
+    animateScroll.scrollTo(value, {
+      duration: 800,
+      smooth: 'easeInOutCubic'
+    })
+  }, 200)
+
+  return true
+}

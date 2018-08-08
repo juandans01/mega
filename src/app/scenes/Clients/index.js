@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 
 import Card from '../../components/Card'
-import Title from '../../components/Title'
 import Slider from 'react-slick'
 
-import { CardsWrapper, Slide, Dots } from './components/Styled'
+import { CardsWrapper, Slide, SlideContent, Dots, Subtitle, Title } from './components/Styled'
 import CardImage from '../../../assets/pcgirl.jpg'
+import WalmartLogo from '../../../assets/logos/Logo-Turner.svg'
 
 export default class Clients extends Component { 
 
@@ -30,19 +30,29 @@ export default class Clients extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1,
+      slidesToScroll: 1,      
+      // autoplay: true,      
+      autoplaySpeed: 2000,
     }
     return (
-      <div className="pure-g">
+      <div id='clients' className="pure-g">
         <div className="pure-u-1">
           <Title>Clientes</Title>
+          <Subtitle>
+            <i>
+              alsldmalksdnnj najsndakj nalksdmasndjl<br/>
+              aoijdsoisdoaijdioasjoadjoajsoiajdoaijsdi<br/>
+              asdmakjsdnakjsndasdnkajsdnkajsndkajsndak
+            </i>            
+          </Subtitle>
         </div>
         <div className="pure-u-1">
           <CardsWrapper>
             <div>
               <Card
                 image={CardImage}
-                subtitle="Client service"
+                title="Client service"
+                titleFlex="flex-start"
                 content="Equipo de especialistas con el
                 seniority, flexibilidad y creatividad
                 para liderar cada desafío, con
@@ -50,7 +60,8 @@ export default class Clients extends Component {
               />
               <Card
                 image={CardImage}
-                subtitle="Client service"
+                title="Client service"
+                titleFlex="flex-start"
                 content="Equipo de especialistas con el
                 seniority, flexibilidad y creatividad
                 para liderar cada desafío, con
@@ -58,7 +69,8 @@ export default class Clients extends Component {
               />
               <Card
                 image={CardImage}
-                subtitle="Client service"
+                title="Client service"
+                titleFlex="flex-start"
                 content="Equipo de especialistas con el
                 seniority, flexibilidad y creatividad
                 para liderar cada desafío, con
@@ -73,21 +85,30 @@ export default class Clients extends Component {
               <div className='title'>
                 La voz de nuestros clientes
               </div>
-              <div className='content'>
-                “Además de su dedicación y eficiencia, destaco por sobre todas
-                las cosas el ingenio que ponen en captar los mejores insights,
+              <SlideContent>
+                <div className='brand-icon'>
+                  <img src={WalmartLogo}/>
+                </div>
+                <div className='speaker'>
+                  <img src="http://via.placeholder.com/100x100"/>
+                  <div>
+                    <strong>Victoria Varela</strong><br/>
+                    Gerente Regional de Consumer & Market Insights<br/>                  
+                  </div>                  
+                </div>
+                <div className='text'>
+                  <i>
+                    “Además de su dedicación y eficiencia, destaco por sobre todas
+                    las cosas el ingenio que ponen en captar los mejores insights,
 
-                sus presentaciones con diseño personalizado y executive suma-
-                ries audiovisuales. Se preocupan mucho por entender la visión y
+                    sus presentaciones con diseño personalizado y executive suma-
+                    ries audiovisuales. Se preocupan mucho por entender la visión y
 
-                cultura de la empresa comprendiendo el negocio cómo si fueran
-                parte de esta compañía. Es un placer trabajar con ellos”
-              </div>
-              <div className='footer'>
-                Victoria Varela<br/>
-                Gerente Regional de Consumer & Market Insights<br/>
-                DIRECTV SKY Latin America<br/>
-              </div>
+                    cultura de la empresa comprendiendo el negocio cómo si fueran
+                    parte de esta compañía. Es un placer trabajar con ellos”
+                  </i>
+                </div>
+              </SlideContent>      
             </Slide>
             <Slide>Second Slide</Slide>
             <Slide>Third Slide</Slide>

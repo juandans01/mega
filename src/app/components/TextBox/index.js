@@ -7,8 +7,14 @@ const Wrapper = styled.div`
 `
 
 const Title = styled.div`
-  font-size: 16px;
+  font-size: ${props => props.titleSize};
   padding-bottom: 10px;
+  text-align: ${props => props.titleAlign}
+`
+
+const SeparatorWrapper = styled.div`
+  display: flex;
+  justify-content: ${props => props.separatorAlign};
 `
 
 const Separator = styled.div`
@@ -18,8 +24,10 @@ const Separator = styled.div`
 `
 
 const Content = styled.div`
-  font-size: 14px;
+  font-size: ${props => props.contentSize};
   padding-top: 20px;
+  line-height: 1.4;
+  text-align: ${props => props.contentAlign}
 `
 
 export default class TextBox extends Component {
@@ -27,11 +35,21 @@ export default class TextBox extends Component {
   render(){
     return (
       <Wrapper maxWidth={this.props.maxWidth}>
-        <Title>
+        <Title 
+          titleAlign={this.props.titleAlign ? this.props.titleAlign : "left"}
+          titleSize={ this.props.titleSize ? this.props.titleSize : "16px"}
+        >
           {this.props.title}
-        </Title>       
-        <Separator />
-        <Content>
+        </Title>
+        <SeparatorWrapper
+          separatorAlign={this.props.separatorAlign ? this.props.separatorAlign : "flex-start"}
+        > 
+          <Separator />
+        </SeparatorWrapper>               
+        <Content
+          contentAlign={this.props.contentAlign ? this.props.contentAlign : "left"}
+          contentSize={ this.props.contentSize ? this.props.contentSize : "14px"}
+        >
           {this.props.content}
         </Content>
       </Wrapper>

@@ -43,8 +43,55 @@ export const RightColumn = styled.div`
 `
 
 export const Map = styled.div`
-  height: 350px;
-  width: 300px;
-  background-color: #ececec;
   margin-bottom: 30px;
+  > img {
+    height: 350px;
+    width: 300px;
+  }
+`
+
+export const Diversity = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 50px;
+
+  > div {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    
+    > img {
+      padding: 10px;
+      height: 220px;
+    }
+  }
+`
+
+export const Ways = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  margin: 50px;
+
+  > div {
+    width: 350px;
+  }
+`
+
+export const Images = styled.div`
+  > div {
+    margin: 20px;
+    width: 260px;  
+    > img {      
+      width: 260px;
+      height: 170px;
+    }
+    > div {
+      border-radius: 1px
+      padding: 5px;
+      background-color: #ececec;
+      color: ${props => props.theme.blueShade}
+      text-transform: uppercase;
+      text-align: center;
+    }    
+  }
 `

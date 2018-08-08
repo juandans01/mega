@@ -8,11 +8,13 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 `
 
-export const Title = styled.div`
-  font-weight: 600;
-  font-size: 24px;  
-  color: ${props => props.theme.greenShade};
+export const Title = styled.div`  
   margin-left: 60px;
+  > img {
+    width: 200px;
+    height: 200px;
+    margin-top: 8px;
+  }
 `
 
 export const Menu = styled.div`
@@ -22,5 +24,32 @@ export const Menu = styled.div`
   > div {
     display: inline;
     padding: 5px;
+    cursor: pointer;
+    position: relative;
+
+    .solutions {
+      position: absolute;
+      right: -30px;
+      margin: 0;
+      padding: 10px;
+      display: none;
+
+      > li {        
+        list-style-type: none;
+        background: white;
+        border-bottom: 1px #ececec solid;
+        padding: 10px;
+      }
+    }
+    
+    .solutions:hover {      
+      display: block;      
+    }
+  }
+
+  #solution:hover {    
+    .solutions {
+      display: block;
+    }
   }
 `

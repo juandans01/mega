@@ -32,9 +32,14 @@ export const Row = styled.div`
   }
 `
 
-export const Picture = styled.img`
-  margin: 10px;
-  height: 110px;
-  width: 110px;
-  border-radius: 50%;
+export const Picture = styled.div`
+  display: flex;
+  justify-content: center;
+
+  > img {
+    margin: 10px;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%; 
+  }
 `

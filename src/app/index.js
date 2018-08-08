@@ -8,6 +8,7 @@ import Culture from './scenes/Culture'
 import Solutions from './scenes/Solutions'
 import Clients from './scenes/Clients'
 import Consumers from './scenes/Consumers'
+import Brands from './scenes/Brands'
 import Contact from './scenes/Contact'
 
 injectGlobal`${global(theme)}` // eslint-disable-line
@@ -20,10 +21,11 @@ class App extends Component {
         <div>
           <Header />
           <Hero />          
-          <Culture />
-          <Solutions />
-          <Consumers />
+          <Culture/>
+          <Solutions/>
+          <Consumers/>
           <Clients />
+          <Brands />
           <Contact />
         </div>
       </ThemeProvider>                      
