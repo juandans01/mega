@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;  
-
+  padding-bottom: 30px;
   .title {
     margin: 20px;
     font-size: 40px;
@@ -37,7 +37,7 @@ export const Wrapper = styled.div`
     align-items: flex-end;
 
     .border {
-      width: 150px;
+      width: 100px;
       background-color: ${props => props.theme.greyShade};
       height: 2px;
       margin: 10px
@@ -67,19 +67,9 @@ export const Wrapper = styled.div`
       text-align: center;
       
       > div {
+        padding: 15px;
         margin: 0;
       }
     `}
-  }
-
-  .footer {
-    display: flex;
-    align-items: center;    
-    margin-bottom: 10px;
-
-    > div {
-      color: ${props => props.theme.greyShade};
-      margin: 20px;
-    }    
   }
 `

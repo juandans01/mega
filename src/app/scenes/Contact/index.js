@@ -27,14 +27,14 @@ export default class Contact extends Component {
             </div>
             <div className='pure-u-1'>
               <div className='countries'>
-                <div className='pure-u-1-3 pure-u-md-1'>
+                <div>
                   <p>Argentina, Chile y Uruguay</p>
                   <span>
                     argentina@megaresearch.net<br/>
                     (+54911) 6932-0000
                   </span>
                 </div>
-                <div className='pure-u-1-3 pure-u-md-1'>
+                <div>
                   <p>Mexico y Centroamerica</p>
                   <span>
                     mexico@megaresearch.net<br/>
@@ -42,7 +42,7 @@ export default class Contact extends Component {
                     (+54911) 6932-0000
                   </span>
                 </div>
-                <div className='pure-u-1-3 pure-u-md-1'>
+                <div>
                   <p>Brasil</p>
                   <span>
                     brasil@megaresearch.net<br/>              

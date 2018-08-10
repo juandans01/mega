@@ -15,7 +15,7 @@ export const Slide = styled.div`
   height: 300px;
   background: ${props => 
     props.customBackground ? 
-    "url(" + props.customBackground + ") no-repeat 50% 50% / cover" : 
+    "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" + props.customBackground + ") no-repeat 50% 50% / cover" : 
     props.theme.greenShade};
   color: white;
   text-align: center;

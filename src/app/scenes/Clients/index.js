@@ -6,6 +6,8 @@ import WalmartLogo from '../../../assets/logos/Logo-walmart-blanco.svg'
 import YPFLogo from '../../../assets/logos/Logo-YPF-blanco.svg'
 import GivaudanLogo from '../../../assets/logos/Logo-givaudan-blanco.svg'
 import Partner1 from '../../../assets/PARTNER01.png'
+import Partner2 from '../../../assets/metodologias02.png'
+import Partner3 from '../../../assets/deliveries03.png'
 
 export default class Clients extends Component { 
 
@@ -71,7 +73,7 @@ export default class Clients extends Component {
               </FirstSlideContent>
             </Slide>
             <Slide
-              customBackground={Partner1}
+              customBackground={Partner2}
             >
               <FirstSlideContent>                                
                 <div className='title'>
@@ -85,7 +87,7 @@ export default class Clients extends Component {
               </FirstSlideContent>
             </Slide>
             <Slide
-              customBackground={Partner1}
+              customBackground={Partner3}
             >
               <FirstSlideContent>                                
                 <div className='title'>
@@ -94,13 +96,13 @@ export default class Clients extends Component {
               </FirstSlideContent>
             </Slide>
           </Slider>
-          {/* <Dots>
+          <Dots>
             <div>
               <li className={this.state.firstActive === '0' ? 'active' : ''} onClick={() => {this.goToSlideFirst(0)}}></li>
               <li className={this.state.firstActive === '1' ? 'active' : ''} onClick={() => {this.goToSlideFirst(1)}}></li>
               <li className={this.state.firstActive === '2' ? 'active' : ''} onClick={() => {this.goToSlideFirst(2)}}></li>
             </div>
-          </Dots> */}
+          </Dots>
         </div>
 
 
@@ -179,13 +181,13 @@ export default class Clients extends Component {
               </Slide>
             </Slider>
           
-            {/* <Dots>
+            <Dots>
               <div>
                 <li className={this.state.active === '0' ? 'active' : ''} onClick={() => {this.goToSlide(0)}}></li>
                 <li className={this.state.active === '1' ? 'active' : ''} onClick={() => {this.goToSlide(1)}}></li>
                 <li className={this.state.active === '2' ? 'active' : ''} onClick={() => {this.goToSlide(2)}}></li>
               </div>
-            </Dots> */}
+            </Dots>
           </SliderWrapper>
         </div>
       </div>
