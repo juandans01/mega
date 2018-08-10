@@ -1,6 +1,6 @@
 {
-  "main.js": "static/js/main.bb436487.js",
-  "main.js.map": "static/js/main.bb436487.js.map",
+  "main.js": "static/js/main.3169c812.js",
+  "main.js.map": "static/js/main.3169c812.js.map",
   "static/media/Consumidores-01.png": "static/media/Consumidores-01.94ee88d4.png",
   "static/media/Consumidores-03.png": "static/media/Consumidores-03.4a809624.png",
   "static/media/Consumidores-04.png": "static/media/Consumidores-04.a68d776f.png",
@@ -26,9 +26,11 @@
   "static/media/PARTNER01.png": "static/media/PARTNER01.ef9ea4e8.png",
   "static/media/Paneles-online.png": "static/media/Paneles-online.84fdeea4.png",
   "static/media/Vf-corp-logo.svg": "static/media/Vf-corp-logo.bbd3cdfc.svg",
+  "static/media/deliveries03.png": "static/media/deliveries03.a8948f59.png",
   "static/media/header.png": "static/media/header.131f1768.png",
   "static/media/location-icon.svg": "static/media/location-icon.6054aa47.svg",
   "static/media/megaresearch.svg": "static/media/megaresearch.39db4002.svg",
+  "static/media/metodologias02.png": "static/media/metodologias02.cb18b7f1.png",
   "static/media/opt-phone.jpg": "static/media/opt-phone.63a52c72.jpg",
   "static/media/soluciones.png": "static/media/soluciones.fa386630.png"
 }
