@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import { Wrapper, RightColumn, Map, Diversity, Ways, Images } from './components/Styled'
+import { Wrapper, RightColumn, Map, Diversity, Ways, Image } from './components/Styled'
 import TextBox from '../../components/TextBox'
 import Title from '../../components/Title'
 //assets
 import PhoneImage from '../../../assets/opt-phone.jpg'
-import DiversityImage from '../../../assets/diversity.jpg'
-import MapTestImage from '../../../assets/mapa.svg'
+import PanelsImage from '../../../assets/Paneles-online.png'
+
 
 export default class Culture extends Component {
 
@@ -14,13 +14,12 @@ export default class Culture extends Component {
       <Wrapper>
         <div id="culture" className='pure-g'>
           <div className='pure-u-1'>
-            <Title>Cultura</Title>
+            <Title>Qué hacemos</Title>
           </div>
           <div className='pure-u-1'>
-            <div className='pure-u-1-2'>
+            <div className='pure-u-1-2 pure-u-md-1'>
               <Diversity>
-                <div>
-                  <img src={DiversityImage}/>
+                <div>            
                   <TextBox
                     titleSize="28px"
                     title="Conectar en la diversidad"
@@ -34,76 +33,53 @@ export default class Culture extends Component {
                   />
                 </div>                
               </Diversity>              
-
-              {/* <LeftColumn>
-                <div className='text-box'>
-                  
-                </div>
-                <div className='cards'>
-                  <Card
-                    image={DiversityImage}
-                    title="Diversidad"
-                  />
-                  <Card
-                    image={PhoneImage}
-                    subtitle="Focus target"
-                    subtitleFlex="flex-end"
-                  />
-                  <Card
-                    image={PhoneImage}
-                    subtitle="Paneles online"
-                    subtitleFlex="center"
-                  />
-                </div>                
-              </LeftColumn>               */}
             </div>
-            <div className='pure-u-1-2'>
+            <div className='pure-u-1-2 pure-u-md-1'>
               <RightColumn>
                 <Map>
-                  <img src={MapTestImage} alt='mapa'/>
+                  <img src="http://via.placeholder.com/350x200" alt='mapa'/>
                 </Map>                
               </RightColumn>
             </div>
           </div>
-          <div className='pure-u-1'>
-            <div className='pure-u-1-2'>
-              <Ways>
-                <div>
-                  <TextBox
-                    titleSize="28px"
-                    title="De que manera?"
-                    contentSize="16px"
-                    content={(
-                      <div>
-                        Llegamos a conectar digitalmente con las
-                        personas a través de dos vías:<br/>
-                        <br/>
-                        <strong>Via Paneles Online</strong> (contacto via e-mail) para
-                        alcanzar masividad en países con más población.<br/>
-                        <br/>
-                        <strong>Focus Target (Contacto desde Redes Sociales)</strong>
-                        para alcanzar targets más específicos, países
-                        menos poblados (Trinidad & Tobago, El Salvador,
-                        Guatemala, etc) o ciudades pequeñas.
-                      </div>
-                    )}
-                    maxWidth="350px"
-                  />
-                </div>
-              </Ways>
-            </div>
-            <div className='pure-u-1-2'>
-              <Images>
-                <div>
-                  <img src={PhoneImage} alt='phone'/>
-                  <div>Paneles online</div>
-                </div>
-                <div>
-                  <img src={PhoneImage} alt='phone'/>
-                  <div>Focus target</div>
-                </div>
-              </Images>
-            </div>
+          <div className='pure-u-1'>          
+            <div className="pure-u-1">
+                <TextBox
+                  titleSize="28px"
+                  titleAlign="center"
+                  title="De que manera?"
+                  separatorAlign="center"
+                  contentSize="16px"
+                  contentAlign="center"
+                  content={(
+                    <div>
+                      Llegamos a conectar digitalmente con las
+                      personas a través de dos vías:<br/>                      
+                    </div>
+                  )}                
+                />
+              </div>
+              <div className='pure-u-1-2 pure-u-md-1'>
+                <Image>
+                  <div className='left'>
+                    <img src={PanelsImage} alt='panels'/>
+                    <div>Paneles online</div>
+                    <p>Contacto via e-mail para alcanzar masividad en países con más población.</p>
+                  </div>                
+                </Image>
+              </div>
+              <div className='pure-u-1-2 pure-u-md-1'>
+                <Image>
+                  <div className='right'>
+                    <img src={PhoneImage} alt='phone'/>
+                    <div>Focus Target</div>
+                    <p><strong>Contacto desde Redes Sociales</strong> para
+                      alcanzar targets más específicos, países
+                      menos poblados o ciudades pequeñas.
+                    </p>
+                  </div>                
+                </Image>
+              </div>            
           </div>   
         </div>
       </Wrapper>

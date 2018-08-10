@@ -1,35 +1,31 @@
 import styled from 'styled-components'
+import { bp } from '../../../../../helpers/styleHelper'
 
-export const CardsWrapper = styled.div`
-  position: relative;
-  height: 275px;
-
-  > div {
-    position: absolute;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-    > div {
-      margin: 20px;
-    }
+export const SliderWrapper = styled.div`
+  .title {
+    font-size: 35px;    
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    background-color: ${props => props.theme.greenShade};
   }
 `
 
 export const Slide = styled.div`
-  height: 330px;
-  background-color: ${props => props.theme.greenShade};
+  height: 300px;
+  background: ${props => 
+    props.customBackground ? 
+    "url(" + props.customBackground + ") no-repeat 50% 50% / cover" : 
+    props.theme.greenShade};
   color: white;
   text-align: center;
-  padding-top: 75px;
+  padding-top: 60px;
 
-  .title {
-    font-size: 35px;
-    margin-bottom: 10px;
-  }
-
+  ${bp('md')`
+    padding: 0;
+    height: 390px;
+  `}
+  
 `
 
 export const SlideContent = styled.div`
@@ -37,11 +33,15 @@ export const SlideContent = styled.div`
   justify-content: center;
   align-items: center;
 
+  ${bp('md')`
+    flex-direction: column;
+  `}
   .text {
     margin: 10px;
-    line-height: 1.1;
+    font-size: 15px;
+    line-height: 1.4;
     width: 350px;
-    text-align: left;
+    text-align: center;
   }
 
   .speaker {
@@ -50,26 +50,38 @@ export const SlideContent = styled.div`
     justify-content: center;
     align-items: center;
 
-    > img {
-      height: 110px;
-      width: 110px;
-      border-radius: 50%; 
-      margin: 10px;
+    > img {      
+      width: 190px;            
     }
 
     margin: 10px;
     width: 200px;
   }
+`
 
-  .brand-icon {
-    display: flex;
-    align-items: center;
-    margin: 10px;
+export const FirstSlideContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    > img {
-      width: 150px;
-      height: 25px;
-    }
+  ${bp('md')`
+    margin-top: 40px;
+  `}
+
+  .title {
+    margin: 20px;    
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2.3px;
+  }
+
+  .big-text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
   }
 `
 
@@ -112,5 +124,6 @@ export const Subtitle = styled.div`
   text-align: center;
   padding: 5px;
   color: ${props => props.theme.greenShade};
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 `

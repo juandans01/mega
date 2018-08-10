@@ -2,16 +2,16 @@ import styled from 'styled-components'
 import Image from '../../../../../assets/soluciones.png'
 
 export const Wrapper = styled.div`
-  height: 300px;
-  background: url(${Image}) no-repeat 50% 50% / cover;
+  height: 360px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${Image}) no-repeat 50% 50% / cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
 `
 
 export const Title = styled.div`
-  font-size: 42px;
-  font-weight: 800;
+  font-size: 55px;
+  font-weight: 900;
   color: white;
   text-align: center;
 `

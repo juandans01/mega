@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { bp } from '../../../../../helpers/styleHelper'
 
 export const Wrapper = styled.div`
 `
@@ -40,25 +41,27 @@ export const LeftColumn = styled.div`
 export const RightColumn = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  ${bp('md')`
+    align-items: center;
+  `}
 `
 
 export const Map = styled.div`
-  margin-bottom: 30px;
-  > img {
-    height: 350px;
-    width: 300px;
-  }
+  margin-bottom: 50px;
 `
 
 export const Diversity = styled.div`
   display: flex;
   justify-content: flex-end;
+  ${bp('md')`
+    justify-content: center;
+  `}
+  align-items: center;
   margin: 0 50px;
 
   > div {
     width: 350px;
-    display: flex;
-    flex-direction: column;
     
     > img {
       padding: 10px;
@@ -67,18 +70,22 @@ export const Diversity = styled.div`
   }
 `
 
-export const Ways = styled.div`
+export const Image = styled.div`
   display: flex;
-  justify-content: flex-end;
-  margin: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;  
 
-  > div {
-    width: 350px;
-  }
-`
-
-export const Images = styled.div`
-  > div {
+  ${bp('md', 'min-width')`
+      .left {
+        align-self: flex-end;
+      }
+      .right {
+        align-self: flex-start;
+      }    
+  `}
+  > div {    
     margin: 20px;
     width: 260px;  
     > img {      
@@ -87,11 +94,18 @@ export const Images = styled.div`
     }
     > div {
       border-radius: 1px
-      padding: 5px;
+      padding: 7px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 1.2px;
       background-color: #ececec;
-      color: ${props => props.theme.blueShade}
+      color: ${props => props.theme.blueShade};
       text-transform: uppercase;
       text-align: center;
-    }    
+    }
+
+    > p {
+      text-align: center;
+    }
   }
 `

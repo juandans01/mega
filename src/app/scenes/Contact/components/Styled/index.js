@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Image from '../../../../../assets/Contacto.png'
+import { bp } from '../../../../../helpers/styleHelper'
 
 export const Wrapper = styled.div`
   background: url(${Image}) no-repeat 50% 50% / cover;
@@ -17,11 +18,16 @@ export const Wrapper = styled.div`
   }
 
   .content {
-    text-align: center;
-    max-width: 750px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+        
+    > div {
+      text-align: center;
+      max-width: 750px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
   }
 
   .separator {
@@ -32,9 +38,14 @@ export const Wrapper = styled.div`
 
     .border {
       width: 150px;
-      background-color: black;
+      background-color: ${props => props.theme.greyShade};
       height: 2px;
       margin: 10px
+    }
+
+    > img {
+      width: 50px;
+      height: 50px;
     }
   }
 
@@ -42,7 +53,7 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-around;
     width: 100%;
-
+    
     > div {
       margin: 30px;
 
@@ -50,6 +61,15 @@ export const Wrapper = styled.div`
         font-weight: 700;
       }
     }
+
+    ${bp('md')`
+      flex-direction: column;
+      text-align: center;
+      
+      > div {
+        margin: 0;
+      }
+    `}
   }
 
   .footer {
@@ -58,7 +78,7 @@ export const Wrapper = styled.div`
     margin-bottom: 10px;
 
     > div {
-      color: black;
+      color: ${props => props.theme.greyShade};
       margin: 20px;
     }    
   }

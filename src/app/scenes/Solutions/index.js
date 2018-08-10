@@ -9,10 +9,6 @@ export default class Solutions extends Component {
     return (
       <Wrapper id="solutions">
         <Title>Soluciones</Title>
-        <ButtonsWrapper>
-          <Button onClick={() => {scrollTo('consumers')}}>Consumidores</Button>
-          <Button onClick={() => {scrollTo('clients')}}>Clientes</Button>
-        </ButtonsWrapper>
       </Wrapper>
     )
   }

@@ -1,9 +1,29 @@
 import React, { Component } from 'react'
-import { Wrapper, Title, Menu } from './components/Styled'
+import { Wrapper, Title, Menu, MobileMenu } from './components/Styled'
 import { scrollTo } from '../../../helpers/styleHelper'
 import Logo from '../../../assets/megaresearch.svg'
+import onClickOutside from 'react-onclickoutside'
 
-export default class Header extends Component {
+class Header extends Component {
+
+  constructor(props){
+    super(props)
+    this.state = {
+      navMobileVisible: false
+    }
+  }
+
+  onMenuIconClick = () => {
+    this.setState({
+      navMobileVisible: !this.state.navMobileVisible
+    })
+  }
+
+  handleClickOutside = (evt) => {
+    this.setState({
+      navMobileVisible: false
+    })
+  }
 
   render() {
     return (
@@ -11,20 +31,26 @@ export default class Header extends Component {
         <Title>
           <img src={Logo}/>
         </Title>
-        <Menu>
+        <Menu className={this.state.navMobileVisible ? 'mobile-visible' : null}>
           <div onClick={() => {scrollTo('hero')}}>Inicio</div>
-          <div onClick={() => {scrollTo('culture')}}>Cultura</div>
-          <div id="solution">
-            <span onClick={() => {scrollTo('solutions')}}>Soluciones</span>
-            <ul className='solutions'>
-              <li onClick={() => {scrollTo('consumers')}}>Consumidores</li>
-              <li onClick={() => {scrollTo('clients')}}>Clientes</li>
-            </ul>
-          </div>
-          <div onClick={() => {scrollTo('brands')}}>Confian en MEGA</div>
+          <div onClick={() => {scrollTo('culture')}}>Qué hacemos</div>
+          <div onClick={() => {scrollTo('solutions')}}>Soluciones</div>
+          <div onClick={() => {scrollTo('clients')}}>Clientes</div>          
           <div onClick={() => {scrollTo('contact')}}>Contacto</div>                    
         </Menu>
+        <MobileMenu onClick={this.onMenuIconClick}>
+          <button type='button'>
+            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 139 139'>
+              <path d='M26.5 46.3h86' />
+              <path d='M26.5 92.7h86' />
+              <path d='M26.5 69.5h86' />
+              <path d='M26.5 69.5h86' />
+            </svg>
+          </button>
+        </MobileMenu>
       </Wrapper>
     )
   }
 }
+
+export default onClickOutside(Header)
