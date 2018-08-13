@@ -6,13 +6,14 @@ export const Wrapper = styled.div`
   .title {
     text-align: center;
     font-size: 44px;
+    font-family: Poppins;
   }
 
   .subtitle {
     text-align: center;
     padding: 5px;
     color: ${props => props.theme.greenShade};
-    margin-bottom: 20px;
+    margin: 20px 0;
   }
 `
 
@@ -22,9 +23,13 @@ export const ConsumersWrapper = styled.div`
 `
 
 export const Consumer = styled.div`
-  ${bp('md')`
-    display:  flex;
-  `}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .textbox {
+    width: 220px;
+  }
 `
 
 export const Row = styled.div`
@@ -37,12 +42,9 @@ export const Row = styled.div`
     width: 350px;
   }
 
-
   ${bp('md')`
     flex-direction: column;
-    > div {
-      width: 100%;
-    }
+    align-items: center;    
   `}
 `
 

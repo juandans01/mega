@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Hero from '../../../../../assets/header.png'
+import { bp } from '../../../../../helpers/styleHelper'
 
 export const Wrapper = styled.div`
   height: 500px; 
@@ -8,6 +9,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  font-family: Poppins;
 
   > p {
     text-align: left;
@@ -15,6 +17,10 @@ export const Wrapper = styled.div`
     font-size: 32px;
     margin-left: 100px;
     line-height: 1.2;
-    font-weight: 900;
+    font-weight: 600;
+
+    ${bp('md')`
+      margin-left: 30px;
+    `}
   }
 `

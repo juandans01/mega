@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Wrapper, Title, Button, ButtonsWrapper } from './components/Styled'
-import { scrollTo } from '../../../helpers/styleHelper'
+import { Wrapper, Title } from './components/Styled'
 
 export default class Solutions extends Component {
 

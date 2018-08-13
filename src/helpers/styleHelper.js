@@ -4,6 +4,22 @@ import { fadeInKeyframe } from './keyframes'
 import { animateScroll } from 'react-scroll'
 import PureCSS from './vendor/PureCSS'
 
+// @font-face {
+//   font-family: 'Proxima-Nova';
+//   font-style: normal;
+//   font-weight: 400;
+//   src:
+//     url(./fonts/Proxima-Nova-Regular.otf) format('opentype')      
+// }
+
+
+// @font-face {
+//   font-family: 'Proxima-Nova';
+//   font-style: italic;
+//   font-weight: normal;
+//   src:      
+//     url(./fonts/Proxima-Nova-Regular-Italic.otf) format('opentype')
+// }
 export function fadeIn () {
   return css`
     opacity: 0.5;
@@ -40,26 +56,8 @@ export const global = (theme) => css`
   ${PureCSS.grid()}
   ${PureCSS.gridResponsive(breakpoints)}
 
-  @font-face {
-    font-family: 'Proxima-Nova';
-    font-style: normal;
-    font-weight: 400;
-    src:
-      url(./fonts/Proxima-Nova-Regular.otf) format('opentype')      
-  }
-
-
-  @font-face {
-    font-family: 'Proxima-Nova';
-    font-style: italic;
-    font-weight: normal;
-    src:      
-      url(./fonts/Proxima-Nova-Regular-Italic.otf) format('opentype')
-  }
-
-  
   html {
-    font: 16px/1 'Proxima-Nova', sans-serif;
+    font: 16px/1 'Roboto', sans-serif;
     color: ${theme.greyShade};
     background: white;
     -webkit-font-smoothing: antialiased;
@@ -67,7 +65,7 @@ export const global = (theme) => css`
   }
 
   .pure-g [class*="pure-u"] {
-    font: 16px/1 'Proxima-Nova', sans-serif;
+    font: 16px/1 'Roboto', sans-serif;
   }
 
   strong {

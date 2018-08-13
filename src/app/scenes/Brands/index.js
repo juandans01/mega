@@ -25,7 +25,7 @@ export default class Brands extends Component {
     const settings = {
       arrows: false,
       infinite: true,
-      slidesToShow:  4,
+      slidesToShow:  6,
       slidesToScroll: 1,
       autoplay: true,
       speed: 3000,
@@ -34,7 +34,7 @@ export default class Brands extends Component {
         {
           breakpoint: 767,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,            
           }
@@ -61,7 +61,7 @@ export default class Brands extends Component {
           </Slide>
           <Slide>
             <div>
-              <img src={CNLogo} alt='cn'/>
+              <img className='cn' src={CNLogo} alt='cn'/>
             </div>            
           </Slide>
           <Slide>
@@ -82,12 +82,12 @@ export default class Brands extends Component {
 
           <Slide>
             <div>
-              <img src={LeeLogo} alt='lee'/>
+              <img className='lee' src={LeeLogo} alt='lee'/>
             </div>            
           </Slide>
           <Slide>
             <div>
-              <img src={TurnerLogo} alt='turner'/>
+              <img className='turner' src={TurnerLogo} alt='turner'/>
             </div>            
           </Slide>
           <Slide>
@@ -102,7 +102,7 @@ export default class Brands extends Component {
           </Slide>
           <Slide>
             <div>
-              <img src={YPFLogo} alt='ypf'/>
+              <img className='ypf' src={YPFLogo} alt='ypf'/>
             </div>            
           </Slide>
           <Slide>
@@ -112,7 +112,7 @@ export default class Brands extends Component {
           </Slide>
           <Slide>
             <div>
-              <img src={MCLogo} alt='mc'/>
+              <img className='mc' src={MCLogo} alt='mc'/>
             </div>            
           </Slide>
           <Slide>

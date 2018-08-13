@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import { Wrapper, RightColumn, Map, Diversity, Ways, Image } from './components/Styled'
+import { Wrapper, RightColumn, Map, Diversity, Image } from './components/Styled'
 import TextBox from '../../components/TextBox'
 import Title from '../../components/Title'
 //assets
 import PhoneImage from '../../../assets/opt-phone.jpg'
-import PanelsImage from '../../../assets/Paneles-online.png'
+import PanelsImage from '../../../assets/left-culture.jpg'
 
 
 export default class Culture extends Component {
@@ -47,7 +47,7 @@ export default class Culture extends Component {
                 <TextBox
                   titleSize="28px"
                   titleAlign="center"
-                  title="De que manera?"
+                  title="¿De que manera?"
                   separatorAlign="center"
                   contentSize="16px"
                   contentAlign="center"
@@ -64,7 +64,7 @@ export default class Culture extends Component {
                   <div className='left'>
                     <img src={PanelsImage} alt='panels'/>
                     <div>Paneles online</div>
-                    <p>Contacto via e-mail para alcanzar masividad en países con más población.</p>
+                    <p>Heterogeneidad de paneles para garantizar muestras mas representativas y adecuadas al target.</p>
                   </div>                
                 </Image>
               </div>

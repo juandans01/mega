@@ -9,14 +9,13 @@ export default class Contact extends Component {
         <div className='pure-u-1'>
           <Wrapper id="contact">
             <div className='pure-u-1'>
-              <div className='title'>Ponete en contacto!</div>
+              <div className='title'>Conecta con nosotros!</div>
             </div>
             <div className='pure-u-1'>
               <div className='content'>
                 <div> 
-                  Podemos ayudarte en algo? Estés donde estés, nos encantaría saber de ti.
-                  Tenemos varias oficinas donde puedes contactarte, y si no estás seguro,
-                  puedes ponerte en contacto con nosotros
+                  ¿Podemos ayudarte en algo?<br/>
+                  Estés donde estés, nos encantaría saber de ti.
                 </div>                
               </div>
             </div>                    
@@ -28,10 +27,12 @@ export default class Contact extends Component {
             <div className='pure-u-1'>
               <div className='countries'>
                 <div>
-                  <p>Argentina, Chile y Uruguay</p>
+                  <p>Argentina y Cono Sur</p>
                   <span>
                     argentina@megaresearch.net<br/>
-                    (+54911) 6932-0000
+                    conosur@megaresearch.net<br/>
+                    (+54911) 6932-0000<br/>
+                    Niceto Vega 4736, Buenas Aires, Argentina
                   </span>
                 </div>
                 <div>
@@ -39,13 +40,6 @@ export default class Contact extends Component {
                   <span>
                     mexico@megaresearch.net<br/>
                     centroamerica@megaresearch.net<br/>
-                    (+54911) 6932-0000
-                  </span>
-                </div>
-                <div>
-                  <p>Brasil</p>
-                  <span>
-                    brasil@megaresearch.net<br/>              
                     (+54911) 6932-0000
                   </span>
                 </div>

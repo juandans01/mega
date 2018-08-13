@@ -15,6 +15,7 @@ export const Wrapper = styled.div`
     font-size: 40px;
     text-align: center;
     padding: 20px;
+    font-family: Poppins;
   }
 
   .content {
@@ -51,7 +52,7 @@ export const Wrapper = styled.div`
 
   .countries {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     
     > div {

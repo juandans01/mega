@@ -8,6 +8,19 @@ export const SliderWrapper = styled.div`
     text-align: center;
     color: white;
     background-color: ${props => props.theme.greenShade};
+    font-family: Poppins;
+  }
+
+  .content{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ${bp('ts')`
+      flex-direction: column;
+    `}
+    background-color: ${props => props.theme.greenShade};
+    color: white;
   }
 `
 
@@ -33,15 +46,33 @@ export const SlideContent = styled.div`
   justify-content: center;
   align-items: center;
 
-  ${bp('md')`
+  flex-direction: column;  
+  margin: 0 30px;
+
+  .logo {
+    margin-top: 30px;
+    ${bp('ts')`
+      margin-top: 10px;
+    `}
+    
+    height: 50px;
+    display: flex;
     flex-direction: column;
-  `}
+    justify-content: center;
+
+    > img {
+      width: 110px;
+    }      
+  }
+
   .text {
     margin: 10px;
     font-size: 15px;
     line-height: 1.4;
-    width: 350px;
+    width: 370px;
     text-align: center;
+    height: 200px;
+    max-width: 215px;
   }
 
   .speaker {
@@ -49,6 +80,8 @@ export const SlideContent = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 120px;
+    text-align: center;
 
     > img {      
       width: 190px;            
@@ -75,6 +108,7 @@ export const FirstSlideContent = styled.div`
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 2.3px;
+    font-family: Poppins;
   }
 
   .big-text {
@@ -82,6 +116,13 @@ export const FirstSlideContent = styled.div`
     font-size: 24px;
     font-weight: 700;
     margin-top: 20px;
+  }
+
+  .image {
+    > img {
+      width: 300px;
+      height: 150px;
+    }
   }
 `
 
@@ -118,6 +159,7 @@ export const Dots = styled.ul`
 export const Title = styled.div`
   text-align: center;
   font-size: 44px;
+  font-family: Poppins;
 `
 
 export const Subtitle = styled.div`

@@ -29,7 +29,7 @@ class Header extends Component {
     return (
       <Wrapper>
         <Title>
-          <img src={Logo}/>
+          <img src={Logo} alt='logo'/>
         </Title>
         <Menu className={this.state.navMobileVisible ? 'mobile-visible' : null}>
           <div onClick={() => {scrollTo('hero')}}>Inicio</div>
