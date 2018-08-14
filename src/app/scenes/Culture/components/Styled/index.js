@@ -42,30 +42,40 @@ export const RightColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  ${bp('md')`
+  ${bp('ts')`
     align-items: center;
   `}
 `
 
 export const Map = styled.div`
   margin-bottom: 50px;
+
+  > img {
+    width: 500px;
+    height: 309px;
+
+    ${bp('ts')`
+      width: 400px;
+      height: 225px;
+    `}
+  }
 `
 
 export const Diversity = styled.div`
   display: flex;
   justify-content: flex-end;
-  ${bp('md')`
+  ${bp('ts')`
     justify-content: center;
   `}
   align-items: center;
-  margin: 0 50px;
+  margin: 50px;
 
   > div {
     width: 350px;
     
     > img {
       padding: 10px;
-      height: 220px;
+      height: 220px;      
     }
   }
 `
@@ -87,21 +97,19 @@ export const Image = styled.div`
   `}
   > div {    
     margin: 20px;
-    width: 260px;  
+    width: 350px;  
     > img {      
-      width: 260px;
-      height: 170px;
+      width: 350px;
+      height: 197px;
     }
     > div {
       border-radius: 1px
       padding: 7px;
-      font-size: 13px;
-      font-weight: 500;
-      letter-spacing: 1.2px;
-      background-color: #ececec;
-      color: ${props => props.theme.blueShade};
-      text-transform: uppercase;
+      font-size: 28px;
+      font-weight: 500;      
+      color: ${props => props.theme.greyShade};      
       text-align: center;
+      margin-top: 15px;
     }
 
     > p {

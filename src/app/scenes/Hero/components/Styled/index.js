@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-family: Poppins;
+  font-family: Ubuntu;
 
   > p {
     text-align: left;

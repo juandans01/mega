@@ -57,7 +57,7 @@ export const global = (theme) => css`
   ${PureCSS.gridResponsive(breakpoints)}
 
   html {
-    font: 16px/1 'Roboto', sans-serif;
+    font: 16px/1 'Open Sans', sans-serif;
     color: ${theme.greyShade};
     background: white;
     -webkit-font-smoothing: antialiased;
@@ -65,7 +65,7 @@ export const global = (theme) => css`
   }
 
   .pure-g [class*="pure-u"] {
-    font: 16px/1 'Roboto', sans-serif;
+    font: 16px/1 'Open Sans', sans-serif;
   }
 
   strong {
@@ -74,10 +74,8 @@ export const global = (theme) => css`
 ` 
 
 export const scrollTo = (nodeId) => {
-  console.log(nodeId)
   setTimeout(() => {
     const element = document.getElementById(nodeId)
-    console.log(element)
     if (!element) return false
     const windowOffsetTop = (window.pageYOffset || document.documentElement.scrollTop) - (document.documentElement.clientTop || 0)
     const value = element.getBoundingClientRect().top + windowOffsetTop

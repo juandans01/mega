@@ -5,5 +5,5 @@ export default styled.div`
   font-size: 44px;
   text-align: center;
   margin: 40px;
-  font-family: Poppins;
+  font-family: Ubuntu;
 `

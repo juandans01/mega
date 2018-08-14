@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
 
-import { SliderWrapper, Slide, SlideContent, FirstSlideContent, Dots, Subtitle, Title } from './components/Styled'
+import { FirstSliderWrapper, SliderWrapper, Slide, SlideContent, FirstSlideContent, Dots, Subtitle, Title } from './components/Styled'
 import DirectTVLogo from '../../../assets/logos/Logo-directv-blanco.svg'
 import YPFLogo from '../../../assets/logos/Logo-YPF-blanco.svg'
 import GivaudanLogo from '../../../assets/logos/Logo-givaudan-blanco.svg'
 import Partner1 from '../../../assets/PARTNER01.png'
 import Partner2 from '../../../assets/metodologias02.png'
 import Partner3 from '../../../assets/deliveries03.png'
+import DeliveriesCustom from '../../../assets/deliveriescustom02.png'
+
+import RightArrow from '../.././../assets/arrows/right-arrow.svg'
+import LeftArrow from '../.././../assets/arrows/left-arrow.svg'
 
 export default class Clients extends Component { 
 
@@ -49,10 +53,9 @@ export default class Clients extends Component {
       infinite: true,      
       slidesToShow:  1,
       slidesToScroll: 1,
-      autoplay: true,
-      speed: 4000,
-      autoplaySpeed: 1500,
-      beforeChange: this.beforeSlideChange
+      autoplay: false,
+      speed: 6000,
+      autoplaySpeed: 12000     
     }
     return (
       <div id='clients' className="pure-g">
@@ -66,69 +69,80 @@ export default class Clients extends Component {
           </Subtitle>
         </div>
         <div className="pure-u-1">
-        <Slider ref={slider => (this.firstSlider = slider)} {...settings}>
-            <Slide
-              customBackground={Partner1}
-            >
-              <FirstSlideContent>                                
-                <div className='title'>
-                  Partner Relationship
-                </div>
-                <div className='big-text'>
-                  Equipo de especialistas con el<br/>
-                  seniority, flexibilidad, agilidad<br/>
-                  y creatividad para liderar cada desafío,<br/>
-                  con orientación a negocio
-                </div>
-              </FirstSlideContent>
-            </Slide>
-            <Slide
-              customBackground={Partner2}
-            >
-              <FirstSlideContent>                                
-                <div className='title'>
-                  INNOVACIÓN METODOLÓGICA
-                </div>
-                <div className='big-text'>
-                  A la vanguardia de técnicas de investigación<br/>
-                  para obtener un feedback más profundo<br/>
-                  del consumidor y sus experiencias.
-                </div>
-              </FirstSlideContent>
-            </Slide>
-            <Slide
-              customBackground={Partner3}
-            >
-              <FirstSlideContent>                                
-                <div className='title'>
-                  DELIVERIES
-                </div>
-                <div className='big-text'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet enim ut orci porttitor tincidunt.
-                </div>
-              </FirstSlideContent>
-            </Slide>
-            <Slide
-              customBackground={Partner3}
-            >
-              <FirstSlideContent>
-              <div className='title'>
-                  DELIVERIES
-                </div>
-                <div className='image'>                  
-                  <img src="http://via.placeholder.com/300x150" alt='deliveriesimage'/>
-                </div>
-              </FirstSlideContent>
-            </Slide>  
-          </Slider>          
-          <Dots>
-            <div>
-              <li className={this.state.firstActive === '0' ? 'active' : ''} onClick={() => {this.goToSlideFirst(0)}}></li>
-              <li className={this.state.firstActive === '1' ? 'active' : ''} onClick={() => {this.goToSlideFirst(1)}}></li>
-              <li className={this.state.firstActive === '2' ? 'active' : ''} onClick={() => {this.goToSlideFirst(2)}}></li>
-              <li className={this.state.firstActive === '3' ? 'active' : ''} onClick={() => {this.goToSlideFirst(3)}}></li>
+          <FirstSliderWrapper>
+            <div className='left-arrow'>
+              <img 
+                src={LeftArrow} 
+                alt='left-arrow'
+                onClick={() => {this.firstSlider.slickPrev()}}
+              />
             </div>
-          </Dots>
+            <Slider ref={slider => (this.firstSlider = slider)} {...settings}>
+              <Slide
+                customBackground={Partner1}
+              >
+                <FirstSlideContent>                                
+                  <div className='title'>
+                    Partner Relationship
+                  </div>
+                  <div className='big-text'>
+                    Equipo de especialistas con el<br/>
+                    seniority, flexibilidad, agilidad<br/>
+                    y creatividad para liderar cada desafío,<br/>
+                    con orientación a negocio
+                  </div>
+                </FirstSlideContent>
+              </Slide>
+              <Slide
+                customBackground={Partner2}
+              >
+                <FirstSlideContent>                                
+                  <div className='title'>
+                    INNOVACIÓN METODOLÓGICA
+                  </div>
+                  <div className='big-text'>
+                    A la vanguardia de técnicas de investigación<br/>
+                    para obtener un feedback más profundo<br/>
+                    del consumidor y sus experiencias.
+                  </div>
+                </FirstSlideContent>
+              </Slide>
+              <Slide
+                customBackground={Partner3}
+              >
+                <FirstSlideContent>                                
+                  <div className='title'>
+                    DELIVERIES
+                  </div>
+                  <div className='big-text'>
+                    Presentaciones 100% customizadas,<br/>
+                    dashboards online, informes<br/>
+                    audiovisuales, videos<br/>
+                    documentales (para etnografías)<br/>
+                  </div>
+                </FirstSlideContent>
+              </Slide>
+              <Slide
+                customBackground={Partner3}
+              >
+                <FirstSlideContent>
+                <div className='title'>
+                    DELIVERIES
+                  </div>
+                  <div className='image'>                  
+                    <img src={DeliveriesCustom} alt='deliveriesimage'/>
+                  </div>
+                </FirstSlideContent>
+              </Slide>  
+            </Slider>
+            <div className='right-arrow'>
+              <img 
+                src={RightArrow} 
+                alt='right-arrow'
+                onClick={() => {this.firstSlider.slickNext()}}
+              />
+            </div>
+          </FirstSliderWrapper>                  
         </div>
 
 
@@ -142,7 +156,7 @@ export default class Clients extends Component {
               <div>              
                 <SlideContent>             
                   <div className='logo'>
-                    <img src={DirectTVLogo} alt='direct'/>
+                    <img className='directv' src={DirectTVLogo} alt='direct'/>
                   </div>                   
                   <div className='text'>
                     <i>
@@ -165,7 +179,7 @@ export default class Clients extends Component {
               <div>
                 <SlideContent>
                   <div className='logo'>
-                    <img src={GivaudanLogo} alt='givaudan' />  
+                    <img className='givaudan' src={GivaudanLogo} alt='givaudan' />  
                   </div>      
                   <div className='text'>
                     <i>
@@ -185,7 +199,7 @@ export default class Clients extends Component {
               </div>
 
               <div>
-                <SlideContent>             
+                <SlideContent>
                   <div className='logo'>
                     <img src={YPFLogo} alt='ypf'/>
                   </div>      
@@ -201,7 +215,7 @@ export default class Clients extends Component {
                     <div>
                       <strong>Mariano Menéndez</strong><br/>
                       Gerente Regional de Consumer & Market Insights<br/>                  
-                    </div>                  
+                    </div>
                   </div>
                 </SlideContent>
               </div>

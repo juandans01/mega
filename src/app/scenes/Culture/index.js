@@ -6,6 +6,9 @@ import Title from '../../components/Title'
 import PhoneImage from '../../../assets/opt-phone.jpg'
 import PanelsImage from '../../../assets/left-culture.jpg'
 
+const CustomTitle = Title.extend`
+  margin-bottom: 70px;
+`
 
 export default class Culture extends Component {
 
@@ -14,7 +17,7 @@ export default class Culture extends Component {
       <Wrapper>
         <div id="culture" className='pure-g'>
           <div className='pure-u-1'>
-            <Title>Qué hacemos</Title>
+            <CustomTitle>Qué hacemos</CustomTitle>
           </div>
           <div className='pure-u-1'>
             <div className='pure-u-1-2 pure-u-md-1'>
@@ -37,7 +40,7 @@ export default class Culture extends Component {
             <div className='pure-u-1-2 pure-u-md-1'>
               <RightColumn>
                 <Map>
-                  <img src="http://via.placeholder.com/350x200" alt='mapa'/>
+                  <img src="http://via.placeholder.com/500x309" alt='mapa'/>
                 </Map>                
               </RightColumn>
             </div>
@@ -64,7 +67,7 @@ export default class Culture extends Component {
                   <div className='left'>
                     <img src={PanelsImage} alt='panels'/>
                     <div>Paneles online</div>
-                    <p>Heterogeneidad de paneles para garantizar muestras mas representativas y adecuadas al target.</p>
+                    <p>Heterogeneidad de paneles para garantizar muestras mas representativas y<br/> adecuadas al target.</p>
                   </div>                
                 </Image>
               </div>

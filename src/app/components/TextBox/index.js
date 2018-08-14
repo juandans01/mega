@@ -10,7 +10,7 @@ const Title = styled.div`
   font-size: ${props => props.titleSize};
   padding-bottom: 10px;
   text-align: ${props => props.titleAlign}
-  font-family: Poppins;
+  font-family: Ubuntu;
 `
 
 const SeparatorWrapper = styled.div`

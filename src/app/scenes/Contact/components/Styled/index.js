@@ -8,14 +8,13 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;  
-  padding-bottom: 30px;
+  align-items: center;
   .title {
     margin: 20px;
     font-size: 40px;
     text-align: center;
     padding: 20px;
-    font-family: Poppins;
+    font-family: Ubuntu;
   }
 
   .content {
@@ -38,10 +37,15 @@ export const Wrapper = styled.div`
     align-items: flex-end;
 
     .border {
-      width: 100px;
+      width: 300px;
       background-color: ${props => props.theme.greyShade};
-      height: 2px;
+      height: 1px;
       margin: 10px
+
+      ${bp('md')`
+        height: 2px;
+        width: 100px;
+      `}
     }
 
     > img {
@@ -52,7 +56,7 @@ export const Wrapper = styled.div`
 
   .countries {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
     
     > div {
@@ -60,6 +64,10 @@ export const Wrapper = styled.div`
 
       > p {
         font-weight: 700;
+      }
+
+      > span {
+        line-height: 1.5;
       }
     }
 
@@ -72,5 +80,96 @@ export const Wrapper = styled.div`
         margin: 0;
       }
     `}
+  }
+
+  .footer {
+    height: 300px;
+    ${bp('md')`
+      height: 470px;
+    `}
+    background: ${props => props.theme.greyShade};
+    color: white;    
+
+    .upper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      ${bp('md')`
+        flex-direction: column;
+        align-items: flex-start;
+      `}
+
+      .logo {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;        
+
+        ${bp('md')`
+          padding: 10px 50px;          
+        `}
+        .social {
+          margin: 30px 10px;
+          a {
+            margin: 20px 20px 0 0;
+          }
+        }
+      }
+
+      .list {
+        padding: 0 180px;        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        ul {
+          margin-top: 50px;
+          li {
+            cursor: pointer;
+            padding: 10px;
+          }
+        }
+
+        ${bp('md')`
+          padding: 0 40px;
+
+          ul {
+            margin: 0;
+          }
+        `}
+      }
+    }
+
+    .lower {      
+      display: flex;
+      justify-content: space-between;
+      padding: 0 50px;
+      font-size: 14px;
+
+      .copyright {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .mercurias {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        img {
+          width: 90px;
+        }
+      }
+
+      ${bp('md')`
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        > div {
+          margin: 10px;
+        }
+      `}
+    }
   }
 `

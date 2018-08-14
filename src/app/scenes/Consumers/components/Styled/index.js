@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   .title {
     text-align: center;
     font-size: 44px;
-    font-family: Poppins;
+    font-family: Ubuntu;
   }
 
   .subtitle {
@@ -28,7 +28,7 @@ export const Consumer = styled.div`
   align-items: center;
 
   .textbox {
-    width: 220px;
+    width: 350px;
   }
 `
 
@@ -42,7 +42,7 @@ export const Row = styled.div`
     width: 350px;
   }
 
-  ${bp('md')`
+  ${bp('ts')`
     flex-direction: column;
     align-items: center;    
   `}
@@ -53,7 +53,7 @@ export const Picture = styled.div`
   justify-content: center;
   > img {
     margin: 10px;
-    height: 113px;
-    width: 200px;    
+    height: 197px;
+    width: 350px;    
   }
 `

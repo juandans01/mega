@@ -7,6 +7,7 @@ import Consumer2 from '../.././../assets/consumers/Consumidores02.png'
 import Consumer3 from '../.././../assets/consumers/Consumidores-03.png'
 import Consumer4 from '../.././../assets/consumers/Consumidores-04.png'
 import Consumer5 from '../.././../assets/consumers/Consumidores-05.png'
+import Consumer6 from '../.././../assets/consumers/Consumidores-06.png'
 
 export default class Consumers extends Component {
 
@@ -108,8 +109,7 @@ Obteniendo un feedback que favorece la aparición de insights.</i></div>
                     <div className='textbox'>
                       <TextBox
                         title={(
-                          <div>Encuestas Online<br/>
-                          Interactivas</div>
+                          <div>Encuestas Online Interactivas</div>
                         )}
                         titleAlign={this.state.titleAlign}
                         separatorAlign={this.state.flexAlign}
@@ -165,12 +165,12 @@ Obteniendo un feedback que favorece la aparición de insights.</i></div>
                 <div className="pure-u-1-3 pure-u-md-1">
                   <Consumer>
                     <Picture>
-                      <img src={Consumer3} alt='consumer3'/>
+                      <img src={Consumer6} alt='consumer3'/>
                     </Picture>
                     <div className='textbox'>
                       <TextBox
                         title={(
-                          <div>Etnografías<br/> audiovisuales</div>
+                          <div>Etnografías audiovisuales</div>
                         )}
                         titleAlign={this.state.titleAlign}
                         separatorAlign={this.state.flexAlign}

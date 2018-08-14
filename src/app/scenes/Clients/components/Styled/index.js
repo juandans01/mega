@@ -8,7 +8,7 @@ export const SliderWrapper = styled.div`
     text-align: center;
     color: white;
     background-color: ${props => props.theme.greenShade};
-    font-family: Poppins;
+    font-family: Ubuntu;
   }
 
   .content{  
@@ -47,7 +47,7 @@ export const SlideContent = styled.div`
   align-items: center;
 
   flex-direction: column;  
-  margin: 0 30px;
+  margin: 15px 30px;
 
   .logo {
     margin-top: 30px;
@@ -63,6 +63,14 @@ export const SlideContent = styled.div`
     > img {
       width: 110px;
     }      
+
+    .directv {
+      width: 150px;
+    }
+
+    .givaudan { 
+      width: 140px;
+    }
   }
 
   .text {
@@ -102,26 +110,24 @@ export const FirstSlideContent = styled.div`
     margin-top: 40px;
   `}
 
-  .title {
-    margin: 20px;    
+  .title {    
     font-size: 34px;
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 2.3px;
-    font-family: Poppins;
+    font-family: Ubuntu;
   }
 
   .big-text {
     text-align: center;
     font-size: 24px;
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .image {
     > img {
-      width: 300px;
-      height: 150px;
+      
     }
   }
 `
@@ -159,7 +165,7 @@ export const Dots = styled.ul`
 export const Title = styled.div`
   text-align: center;
   font-size: 44px;
-  font-family: Poppins;
+  font-family: Ubuntu;
 `
 
 export const Subtitle = styled.div`
@@ -168,4 +174,33 @@ export const Subtitle = styled.div`
   color: ${props => props.theme.greenShade};
   margin-top: 20px;
   margin-bottom: 30px;
+`
+
+export const FirstSliderWrapper = styled.div`
+  position: relative;
+
+  .right-arrow {
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    top: 150px;
+    
+    img {
+      height: 60px;
+      width: 60px;
+    }
+  }
+
+  .left-arrow {
+    z-index: 2;
+    position: absolute;
+    left: 20px;
+    top: 150px;
+    
+    img {
+      cursor: pointer;
+      height: 60px;
+      width: 60px;
+    }
+  }
 `
