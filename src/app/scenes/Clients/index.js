@@ -53,7 +53,7 @@ export default class Clients extends Component {
       infinite: true,      
       slidesToShow:  1,
       slidesToScroll: 1,
-      autoplay: false,
+      autoplay: true,
       speed: 6000,
       autoplaySpeed: 12000     
     }
