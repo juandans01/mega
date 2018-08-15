@@ -31,7 +31,7 @@ export default class Brands extends Component {
       infinite: true,
       slidesToShow:  6,
       slidesToScroll: 1,
-      autoplay: false,
+      autoplay: true,
       speed: 3000,
       autoplaySpeed: 1500,
       responsive: [

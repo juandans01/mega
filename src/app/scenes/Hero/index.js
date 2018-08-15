@@ -11,8 +11,8 @@ export default class Hero extends Component {
           Investigación en movimiento<br/>          
         </p>
         <span>
-          tecnología y flexibilidad para<br/>
-          afrontar los nuevos desafíos
+          Tecnología y flexibilidad para<br/>
+          afrontar los nuevos desafíos.
         </span>
       </Wrapper>
     )

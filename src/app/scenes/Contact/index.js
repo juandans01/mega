@@ -41,7 +41,7 @@ export default class Contact extends Component {
                   </span>
                 </div>
                 <div>
-                  <p>Mexico y Centroamerica</p>
+                  <p>México y Centroamérica</p>
                   <span>
                     mexico@megaresearch.net<br/>
                     centroamerica@megaresearch.net<br/>                    
