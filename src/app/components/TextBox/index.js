@@ -9,8 +9,9 @@ const Wrapper = styled.div`
 const Title = styled.div`
   font-size: ${props => props.titleSize};
   padding-bottom: 10px;
-  text-align: ${props => props.titleAlign}
+  text-align: ${props => props.titleAlign};
   font-family: Ubuntu;
+  line-height: 1.3;
 `
 
 const SeparatorWrapper = styled.div`

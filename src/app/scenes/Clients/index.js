@@ -62,10 +62,8 @@ export default class Clients extends Component {
         <div className="pure-u-1">
           <Title>Clientes</Title>
           <Subtitle>
-            <i>
-              Trabajar codo a codo con nuestros clientes es lo que transforma<br/>
-              un proyecto mas en un proyecto unico            
-            </i>            
+            Trabajar codo a codo con nuestros clientes es lo que transforma<br/>
+            un proyecto más en un proyecto unico.
           </Subtitle>
         </div>
         <div className="pure-u-1">
@@ -89,7 +87,7 @@ export default class Clients extends Component {
                     Equipo de especialistas con el<br/>
                     seniority, flexibilidad, agilidad<br/>
                     y creatividad para liderar cada desafío,<br/>
-                    con orientación a negocio
+                    con orientación a negocio.
                   </div>
                 </FirstSlideContent>
               </Slide>
@@ -112,13 +110,13 @@ export default class Clients extends Component {
               >
                 <FirstSlideContent>                                
                   <div className='title'>
-                    DELIVERIES
+                    DELIVERIES PERSONALIZADOS
                   </div>
                   <div className='big-text'>
                     Presentaciones 100% customizadas,<br/>
                     dashboards online, informes<br/>
                     audiovisuales, videos<br/>
-                    documentales (para etnografías)<br/>
+                    documentales (para etnografías).<br/>
                   </div>
                 </FirstSlideContent>
               </Slide>
@@ -127,7 +125,7 @@ export default class Clients extends Component {
               >
                 <FirstSlideContent>
                 <div className='title'>
-                    DELIVERIES
+                    DELIVERIES PERSONALIZADOS
                   </div>
                   <div className='image'>                  
                     <img src={DeliveriesCustom} alt='deliveriesimage'/>
@@ -160,17 +158,13 @@ export default class Clients extends Component {
                   </div>                   
                   <div className='text'>
                     <i>
-                      “Además de su dedicación y eficiencia, destaco por sobre todas
-                      las cosas <strong>el ingenio que ponen en captar los mejores insights,
-
-                      sus presentaciones con diseño personalizado</strong> y executive 
-                      sumaries audiovisuales. Es un placer trabajar con ellos”
+                      “Además de su dedicación y eficiencia, destaco por sobre todas las cosas <strong>el ingenio que ponen en captar los mejores insights, sus presentaciones con diseño personalizado</strong> y executive sumaries audiovisuales. Es un placer trabajar con ellos”
                     </i>
                   </div>
                   <div className='speaker'>                    
                     <div>
                       <strong>Victoria Varela</strong><br/>
-                      Gerente Regional de Consumer & Market Insights<br/>                  
+                      <span>Gerente Regional de Consumer & Market Insights</span><br/>                  
                     </div>                  
                   </div>
                 </SlideContent>    
@@ -183,16 +177,13 @@ export default class Clients extends Component {
                   </div>      
                   <div className='text'>
                     <i>
-                    “En menos de un año Mega Research se convirtió en nuestro
-                    <strong> principal aliado estratégico para Consumer Insights. </strong>
-                    Ofrecen un alto <strong>expertise en manejo de herramientas y técnicas de investigación</strong>, 
-                    con un <strong>pensamiento innovador para brindar soluciones.</strong>
+                    “En menos de un año Mega Research se convirtió en nuestro <strong> principal aliado estratégico para Consumer Insights.</strong> Ofrecen un alto <strong>expertise en manejo de herramientas y técnicas de investigación</strong>, con un <strong>pensamiento innovador para brindar soluciones.</strong>
                     </i>
                   </div>
                   <div className='speaker'>                    
                     <div>
                       <strong>Sebastián Silva</strong><br/>
-                      Latam Consumer Insights Manager<br/>                  
+                      <span>Latam Consumer Insights Manager</span><br/>                  
                     </div>                  
                   </div>
                 </SlideContent>
@@ -214,7 +205,7 @@ export default class Clients extends Component {
                   <div className='speaker'>                    
                     <div>
                       <strong>Mariano Menéndez</strong><br/>
-                      Gerente Regional de Consumer & Market Insights<br/>                  
+                      <span>Jefe de Investigación Estratégica</span><br/>                  
                     </div>
                   </div>
                 </SlideContent>

@@ -3,7 +3,7 @@ import { bp } from '../../../../../helpers/styleHelper'
 
 export const SliderWrapper = styled.div`
   .title {
-    font-size: 35px;    
+    font-size: 37px;    
     padding-top: 50px;
     text-align: center;
     color: white;
@@ -78,9 +78,9 @@ export const SlideContent = styled.div`
     font-size: 15px;
     line-height: 1.4;
     width: 370px;
-    text-align: center;
+    text-align: justify;    
     height: 200px;
-    max-width: 215px;
+    max-width: 230px;
   }
 
   .speaker {
@@ -89,14 +89,17 @@ export const SlideContent = styled.div`
     justify-content: center;
     align-items: center;
     height: 120px;
-    text-align: center;
-
-    > img {      
-      width: 190px;            
-    }
-
+    text-align: center;    
     margin: 10px;
     width: 200px;
+
+    > div {
+      line-height: 1.3;
+      
+      > span {
+        font-size: 14px;
+      }
+    }
   }
 `
 
@@ -111,7 +114,7 @@ export const FirstSlideContent = styled.div`
   `}
 
   .title {    
-    font-size: 34px;
+    font-size: 36px;
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 2.3px;
@@ -123,6 +126,7 @@ export const FirstSlideContent = styled.div`
     font-size: 24px;
     font-weight: 700;
     margin-top: 40px;
+    line-height: 1.4;
   }
 
   .image {
@@ -164,7 +168,7 @@ export const Dots = styled.ul`
 
 export const Title = styled.div`
   text-align: center;
-  font-size: 44px;
+  font-size: 48px;
   font-family: Ubuntu;
 `
 
@@ -172,6 +176,7 @@ export const Subtitle = styled.div`
   text-align: center;
   padding: 5px;
   color: ${props => props.theme.greenShade};
+  line-height: 1.4;
   margin-top: 20px;
   margin-bottom: 30px;
 `

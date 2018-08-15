@@ -15,7 +15,7 @@ export default class Contact extends Component {
         <div className='pure-u-1'>
           <Wrapper id="contact">
             <div className='pure-u-1'>
-              <div className='title'>Conecta con nosotros!</div>
+              <div className='title'>¡Conecta con nosotros!</div>
             </div>
             <div className='pure-u-1'>
               <div className='content'>
@@ -36,17 +36,15 @@ export default class Contact extends Component {
                   <p>Argentina y Cono Sur</p>
                   <span>
                     argentina@megaresearch.net<br/>
-                    conosur@megaresearch.net<br/>
-                    (+54911) 6932-0000<br/>
-                    Niceto Vega 4736, Buenas Aires, Argentina
+                    conosur@megaresearch.net<br/>                    
+                    Niceto Vega 4736, Buenos Aires, Argentina
                   </span>
                 </div>
                 <div>
                   <p>Mexico y Centroamerica</p>
                   <span>
                     mexico@megaresearch.net<br/>
-                    centroamerica@megaresearch.net<br/>
-                    (+54911) 6932-0000
+                    centroamerica@megaresearch.net<br/>                    
                   </span>
                 </div>
               </div>
@@ -64,15 +62,6 @@ export default class Contact extends Component {
                         <img src={Linkedin} alt='linkedin-logo'/>
                       </a>                               
                     </div>
-                  </div>
-                  <div className='list'>
-                    <ul>
-                      <li onClick={() => {scrollTo('hero')}}>Inicio</li>
-                      <li onClick={() => {scrollTo('culture')}}>Que hacemos</li>
-                      <li onClick={() => {scrollTo('solutions')}}>Soluciones</li>
-                      <li onClick={() => {scrollTo('clients')}}>Clientes</li>
-                      <li onClick={() => {scrollTo('contact')}}>Contacto</li>
-                    </ul>
                   </div>
                 </div>
                 <div className='lower'>

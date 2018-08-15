@@ -8,16 +8,20 @@ import GivaudanLogo from '../../../assets/logos/Logo-givaudan.svg'
 import AkzLogo from '../../../assets/logos/Logo-akzonobel.svg'
 import CNLogo from '../../../assets/logos/Logo-Cartoon_Network.svg'
 import DafitiLogo from '../../../assets/logos/Logo-dafiti.svg'
-import FoxLogo from '../../../assets/logos/Logo-fox.svg'
 import GCLogo from '../../../assets/logos/Logo-grupo-cepas.svg'
 import LeeLogo from '../../../assets/logos/Logo-Lee.svg'
-import TurnerLogo from '../../../assets/logos/logo-turner.svg'
 import WalmartLogo from '../../../assets/logos/Logo-walmart.svg'
 import WranglerLogo from '../../../assets/logos/Logo-Wrangler.svg'
 import YPFLogo from '../../../assets/logos/Logo-YPF.svg'
-import MakroLogo from '../../../assets/logos/Logo-makro.svg'
-import MCLogo from '../../../assets/logos/Logo-mac.svg'
 import VFLogo from '../../../assets/logos/Vf-corp-logo.svg'
+
+import TurnerLogo from '../../../assets/logos/turner.png'
+import MCLogo from '../../../assets/logos/mac.png'
+import MakroLogo from '../../../assets/logos/makro.png'
+import FoxLogo from '../../../assets/logos/fox.png'
+import FiberLogo from '../../../assets/logos/fibercorp.png'
+import GanciaLogo from '../../../assets/logos/gancia.png'
+
 
 export default class Brands extends Component {
 
@@ -27,7 +31,7 @@ export default class Brands extends Component {
       infinite: true,
       slidesToShow:  6,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       speed: 3000,
       autoplaySpeed: 1500,
       responsive: [
@@ -47,6 +51,16 @@ export default class Brands extends Component {
           <Slide>
             <div>
               <img src={DirectTVLogo} alt='directv'/>
+            </div>            
+          </Slide>
+          <Slide>
+            <div>
+              <img className='fiber' src={FiberLogo} alt='fibercorp'/>
+            </div>            
+          </Slide>
+          <Slide>
+            <div>
+              <img className='gancia' src={GanciaLogo} alt='gancia'/>
             </div>            
           </Slide>
           <Slide>
@@ -71,7 +85,7 @@ export default class Brands extends Component {
           </Slide>
           <Slide>
             <div>
-              <img src={FoxLogo} alt='fox'/>
+              <img className='fox' src={FoxLogo} alt='fox'/>
             </div>            
           </Slide>
           <Slide>
@@ -107,7 +121,7 @@ export default class Brands extends Component {
           </Slide>
           <Slide>
             <div>
-              <img src={MakroLogo} alt='makro'/>
+              <img className="makro" src={MakroLogo} alt='makro'/>
             </div>            
           </Slide>
           <Slide>

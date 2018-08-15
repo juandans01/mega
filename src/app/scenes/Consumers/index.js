@@ -50,8 +50,8 @@ export default class Consumers extends Component {
         <div className='pure-g'>
           <div className='pure-u-1'>
             <div className='title'>Consumidores</div>
-            <div className='subtitle'><i>Conectamos con los consumidores en los lugares donde se expresan.<br/>
-Obteniendo un feedback que favorece la aparición de insights.</i></div>
+            <div className='subtitle'>Conectamos con los consumidores en los lugares donde se expresan.<br/>
+Obteniendo un feedback que favorece la aparición de insights.</div>
           </div>
           <div className='pure-u-1'>
             <ConsumersWrapper>
@@ -64,16 +64,18 @@ Obteniendo un feedback que favorece la aparición de insights.</i></div>
                     <div className='textbox'>
                       <TextBox
                         title={(
-                          <div>Micro Grupos Focales en<br/>
+                          <div>Micro-Grupos Focales en<br/>
                           Instagram / Skype</div>
                         )}
+                        titleSize="18px"
                         titleAlign={this.state.titleAlign}
                         separatorAlign={this.state.flexAlign}
                         contentAlign={this.state.titleAlign}
+                        contentSize="15px"
                         content={(
                           <div>
                             Conecta con Millenials en <i>real time</i> para conversar
-                            tópicos en su entorno natural .
+                            tópicos en su entorno natural.
                           </div>
                         )}
                       />
@@ -91,9 +93,11 @@ Obteniendo un feedback que favorece la aparición de insights.</i></div>
                           <div>Videos Etnográficos<br/>
                           en Whatsapp</div>
                         )}
+                        titleSize="18px"
                         titleAlign={this.state.titleAlign}
                         separatorAlign={this.state.flexAlign}
                         contentAlign={this.state.titleAlign}
+                        contentSize="15px"
                         content="Construye un espacio ágil, dinámico
                         y privado para responder consignas
                         tácticas."
@@ -111,12 +115,18 @@ Obteniendo un feedback que favorece la aparición de insights.</i></div>
                         title={(
                           <div>Encuestas Online Interactivas</div>
                         )}
+                        titleSize="18px"
                         titleAlign={this.state.titleAlign}
                         separatorAlign={this.state.flexAlign}
                         contentAlign={this.state.titleAlign}
-                        content="Encuestas pensadas y adaptadas para una
-                        participación comprometida. Dinámicas,
-                        iconográficas, multitarget y mobile friendly."
+                        contentSize="15px"
+                        content={(
+                          <div>
+                            Encuestas pensadas y adaptadas para una
+                            participación comprometida. Dinámicas,
+                            iconográficas, multitarget y <i>mobile friendly</i>.
+                          </div>
+                        )}
                       />
                     </div>                    
                   </Consumer>
@@ -133,9 +143,11 @@ Obteniendo un feedback que favorece la aparición de insights.</i></div>
                         title={(
                           <div>Comunidades Online</div>
                         )}
+                        titleSize="18px"
                         titleAlign={this.state.titleAlign}
                         separatorAlign={this.state.flexAlign}
                         contentAlign={this.state.titleAlign}
+                        contentSize="15px"
                         content="Un espacio digital especialmente diseñado para que los consumidores
                         interactuen, compartan ideas, valores y opiniones. Ideal para testeos, diarios de consumo
                         y brand positioning."
@@ -153,9 +165,11 @@ Obteniendo un feedback que favorece la aparición de insights.</i></div>
                         title={(
                           <div>Social Listening</div>
                         )}
+                        titleSize="18px"
                         titleAlign={this.state.titleAlign}
                         separatorAlign={this.state.flexAlign}
                         contentAlign={this.state.titleAlign}
+                        contentSize="15px"
                         content="Escucha a los consumidores mediante una metodología única de análisis de 
                         menciones en redes sociales; combinando IA y thick data para captar insights."
                       />
@@ -172,9 +186,11 @@ Obteniendo un feedback que favorece la aparición de insights.</i></div>
                         title={(
                           <div>Etnografías audiovisuales</div>
                         )}
+                        titleSize="18px"
                         titleAlign={this.state.titleAlign}
                         separatorAlign={this.state.flexAlign}
                         contentAlign={this.state.titleAlign}
+                        contentSize="15px"
                         content="Antropología social al servicio de la investigacion de mercados:
                         ingresa a los hogares, acompaña sus compras, entiende sus razones más profundas y comparte experiencias."
                       />

@@ -18,12 +18,34 @@ export const Slide = styled.div`
     }
     
   }
-`
 
-// .turner {
-//   height: 30px;
-//   width: 120px;
-// }
+  .fox {    
+    height: 65px;
+  }
+
+  .mc {
+    height: 65px;
+  }
+
+  .makro {
+    height: 70px;
+  }
+
+  .turner {
+    height: 60px;
+    width: 140px;
+  }
+
+  .gancia {
+    height: 55px;
+    width: 130px;
+  }
+
+  .fiber {
+    height: 70px;
+    width: 156px;
+  }
+`
 
 // .lee {
 //   width: 80px;
@@ -37,8 +59,4 @@ export const Slide = styled.div`
 
 // .ypf {
 //   width: 110px;
-// }
-
-// .mc {
-//   height: 65px;
 // }

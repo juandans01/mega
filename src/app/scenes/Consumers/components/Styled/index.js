@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   margin: 30px;
   .title {
     text-align: center;
-    font-size: 44px;
+    font-size: 48px;
     font-family: Ubuntu;
   }
 
@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
     text-align: center;
     padding: 5px;
     color: ${props => props.theme.greenShade};
+    line-height: 1.4;
     margin: 20px 0;
   }
 `

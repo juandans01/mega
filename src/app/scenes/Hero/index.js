@@ -8,10 +8,12 @@ export default class Hero extends Component {
     return (
       <Wrapper id='hero'>
         <p>
-          Inteligencia de mercado,<br/>
+          Investigación en movimiento<br/>          
+        </p>
+        <span>
           tecnología y flexibilidad para<br/>
           afrontar los nuevos desafíos
-        </p>
+        </span>
       </Wrapper>
     )
   }

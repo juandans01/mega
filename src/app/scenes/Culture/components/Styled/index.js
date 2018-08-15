@@ -63,7 +63,7 @@ export const Map = styled.div`
 
 export const Diversity = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   ${bp('ts')`
     justify-content: center;
   `}
@@ -71,7 +71,7 @@ export const Diversity = styled.div`
   margin: 50px;
 
   > div {
-    width: 350px;
+    width: 362px;
     
     > img {
       padding: 10px;
@@ -114,6 +114,7 @@ export const Image = styled.div`
 
     > p {
       text-align: center;
+      line-height: 1.4;
     }
   }
 `

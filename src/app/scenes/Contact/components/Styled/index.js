@@ -9,9 +9,11 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 40px;
+
   .title {
     margin: 20px;
-    font-size: 40px;
+    font-size: 44px;
     text-align: center;
     padding: 20px;
     font-family: Ubuntu;
@@ -61,6 +63,7 @@ export const Wrapper = styled.div`
     
     > div {
       margin: 30px;
+      font-size: 16px;
 
       > p {
         font-weight: 700;
@@ -80,12 +83,14 @@ export const Wrapper = styled.div`
         margin: 0;
       }
     `}
+
+    padding-bottom: 60px;
   }
 
   .footer {
-    height: 300px;
+    height: 150px;
     ${bp('md')`
-      height: 470px;
+      height: 180px;
     `}
     background: ${props => props.theme.greyShade};
     color: white;    
@@ -99,52 +104,41 @@ export const Wrapper = styled.div`
         align-items: flex-start;
       `}
 
-      .logo {
-        padding: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;        
-
+      .logo {        
+        display: flex;        
+        justify-content: flex-start;        
+        margin: 20px;
+        
         ${bp('md')`
-          padding: 10px 50px;          
+          margin: 0;          
+          width: 100%;
+          padding: 30px 0;
+          justify-content: center;          
         `}
+        > img {
+          width: 185px;
+          height: 40px;
+        }
+
         .social {
-          margin: 30px 10px;
-          a {
-            margin: 20px 20px 0 0;
+          margin-left: 20px;
+          display: flex;
+          align-items: center
+          > a {            
+            margin: 0 10px;
+            > img {
+              height: 30px;
+            }
           }
         }
-      }
-
-      .list {
-        padding: 0 180px;        
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        ul {
-          margin-top: 50px;
-          li {
-            cursor: pointer;
-            padding: 10px;
-          }
-        }
-
-        ${bp('md')`
-          padding: 0 40px;
-
-          ul {
-            margin: 0;
-          }
-        `}
       }
     }
 
     .lower {      
       display: flex;
       justify-content: space-between;
-      padding: 0 50px;
-      font-size: 14px;
+      padding: 30px 30px 20px 30px;
+      font-size: 9px;
 
       .copyright {
         display: flex;
@@ -158,13 +152,14 @@ export const Wrapper = styled.div`
         align-items: center;
 
         img {
-          width: 90px;
+          width: 70px;
         }
       }
 
       ${bp('md')`
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        padding: 0;
         justify-content: flex-start;
         > div {
           margin: 10px;
