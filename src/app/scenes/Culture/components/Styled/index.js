@@ -50,15 +50,15 @@ export const RightColumn = styled.div`
 export const Map = styled.div`
   margin-bottom: 50px;
 
-  > img {
-    width: 500px;
+  > iframe {
+    width: 550px;
     height: 309px;
 
     ${bp('ts')`
-      width: 400px;
-      height: 225px;
+      width: 360px;
+      height: 203px;
     `}
-  }
+  }    
 `
 
 export const Diversity = styled.div`
@@ -110,6 +110,10 @@ export const Image = styled.div`
       color: ${props => props.theme.greyShade};      
       text-align: center;
       margin-top: 15px;
+
+      ${bp('md')`
+        font-size: 24px;    
+      `}
     }
 
     > p {

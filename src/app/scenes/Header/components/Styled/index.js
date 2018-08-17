@@ -22,7 +22,7 @@ export const Title = styled.div`
     margin-top: 8px;
   }
 
-  ${bp('md')`
+  ${bp('ts')`
     margin-left: 10px;
   `}
 `
@@ -37,12 +37,12 @@ export const Menu = styled.div`
     padding: 5px 10px;
     cursor: pointer;
     position: relative;
-    ${bp('md')`
+    ${bp('ts')`
       display: none;
     `}
   }
 
-  ${bp('md')`
+  ${bp('ts')`
     position: absolute;
     margin: 5px 10px;
     right: 0;
@@ -86,7 +86,7 @@ export const MobileMenu = styled.div`
     outline: unset !important;
     cursor: pointer;
 
-    ${bp('md')`
+    ${bp('ts')`
       margin-left: 30px;
     `}
   }
@@ -102,7 +102,7 @@ export const MobileMenu = styled.div`
     stroke-width: 6;
   }
 
-  ${bp('md', 'min-width')`
+  ${bp('ts', 'min-width')`
     display: none;  
   `}
 

@@ -45,6 +45,9 @@ export default class Contact extends Component {
                   <span>
                     mexico@megaresearch.net<br/>
                     centroamerica@megaresearch.net<br/>                    
+                    Av. Insurgentes Sur 1793, Interior 805.<br/>
+                    Colonia Guadalupe Inn, Delegación Alvaro<br/>
+                    Obregon. CDMX (01020)
                   </span>
                 </div>
               </div>

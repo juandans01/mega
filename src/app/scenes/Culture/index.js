@@ -6,8 +6,16 @@ import Title from '../../components/Title'
 import PhoneImage from '../../../assets/opt-phone.jpg'
 import PanelsImage from '../../../assets/left-culture.jpg'
 
+import { bp } from '../../../helpers/styleHelper'
 const CustomTitle = Title.extend`
-  margin-bottom: 70px;
+  
+  ${bp('ts', 'min-width')`
+    margin-bottom: 70px;
+  `}
+  ${bp('md')`
+    font-size: 44px;
+    margin-bottom: 10px;
+  `}
 `
 
 export default class Culture extends Component {
@@ -41,7 +49,7 @@ export default class Culture extends Component {
             <div className='pure-u-1-2 pure-u-md-1'>
               <RightColumn>
                 <Map>
-                  <img src="http://via.placeholder.com/500x309" alt='mapa'/>
+                  <iframe src="https://player.vimeo.com/video/285165709" width="640" height="360" frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>                  
                 </Map>                
               </RightColumn>
             </div>

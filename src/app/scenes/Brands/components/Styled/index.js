@@ -19,6 +19,10 @@ export const Slide = styled.div`
     
   }
 
+  .akz {
+    width: 180px;
+  }
+
   .fox {    
     height: 65px;
   }

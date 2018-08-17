@@ -3,12 +3,15 @@ import { bp } from '../../../../../helpers/styleHelper'
 
 export const SliderWrapper = styled.div`
   .title {
-    font-size: 37px;    
+    font-size: 38px;    
     padding-top: 50px;
     text-align: center;
     color: white;
     background-color: ${props => props.theme.greenShade};
     font-family: Ubuntu;
+    ${bp('md')`
+      font-size: 32px;
+    `}
   }
 
   .content{  
@@ -29,7 +32,7 @@ export const Slide = styled.div`
   background: ${props => 
     props.customBackground ? 
     "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" + props.customBackground + ") no-repeat 50% 50% / cover" : 
-    props.theme.greenShade};
+    props.theme.greenShade};  
   color: white;
   text-align: center;
   padding-top: 60px;
@@ -115,6 +118,9 @@ export const FirstSlideContent = styled.div`
 
   .title {    
     font-size: 36px;
+    ${bp('md')`
+      font-size: 32px;
+    `}
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 2.3px;
@@ -124,19 +130,36 @@ export const FirstSlideContent = styled.div`
   .big-text {
     text-align: center;
     font-size: 24px;
+    ${bp('md')`
+      font-size: 20px;
+      padding: 0 15px;
+    `}
     font-weight: 700;
     margin-top: 40px;
     line-height: 1.4;
   }
 
   .image {
+    display: flex;
+    justify-content: center;
     > img {
-      
+      margin: 10px 0;
+      text-align: center;
+      width: 95%;
+      height: 100%;
+
+      ${bp('ts')`
+        width: 80%;
+        height: 90%;
+      `}
     }
   }
 `
 
 export const Dots = styled.ul`
+  ${bp('md', 'min-width')`
+    display: none;
+  `}
   text-align: center;
   display: flex;
   justify-content: center;
@@ -169,6 +192,9 @@ export const Dots = styled.ul`
 export const Title = styled.div`
   text-align: center;
   font-size: 48px;
+  ${bp('md')`
+    font-size: 44px;
+  `}
   font-family: Ubuntu;
 `
 
@@ -179,12 +205,15 @@ export const Subtitle = styled.div`
   line-height: 1.4;
   margin-top: 20px;
   margin-bottom: 30px;
+  ${bp('md')`
+    padding: 5px 15px;
+  `}
 `
 
 export const FirstSliderWrapper = styled.div`
   position: relative;
 
-  .right-arrow {
+  .right-arrow {    
     position: absolute;
     cursor: pointer;
     right: 20px;
@@ -194,6 +223,9 @@ export const FirstSliderWrapper = styled.div`
       height: 60px;
       width: 60px;
     }
+    ${bp('md')`
+      display:none;
+    `}
   }
 
   .left-arrow {
@@ -207,5 +239,31 @@ export const FirstSliderWrapper = styled.div`
       height: 60px;
       width: 60px;
     }
+    ${bp('md')`
+      display:none;
+    `}
+  }
+
+  .innovation {
+    ${bp('md')`
+      background-position-x: 0%, 70%;
+    `}
+  }
+
+  .deliveries {
+    ${bp('md')`
+      background-position-x: 0%, 20%;
+    `}
+  }
+
+  .deliveries-mobile {
+    > div {
+      .image {
+        margin-top: 20px;
+        > img {
+          width: 70%;
+        }
+      }
+    }    
   }
 `

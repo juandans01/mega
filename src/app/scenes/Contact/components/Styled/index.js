@@ -11,12 +11,19 @@ export const Wrapper = styled.div`
   align-items: center;
   padding-top: 40px;
 
+  ${bp('md')`      
+    padding-top: 20px;
+  `}
   .title {
     margin: 20px;
     font-size: 44px;
     text-align: center;
     padding: 20px;
     font-family: Ubuntu;
+    ${bp('md')`
+      font-size: 40px;
+      padding: 10px;
+    `}
   }
 
   .content {

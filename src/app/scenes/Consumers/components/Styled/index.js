@@ -6,6 +6,9 @@ export const Wrapper = styled.div`
   .title {
     text-align: center;
     font-size: 48px;
+    ${bp('md')`
+      font-size: 44px;
+    `}
     font-family: Ubuntu;
   }
 

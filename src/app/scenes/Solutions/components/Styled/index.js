@@ -1,16 +1,23 @@
 import styled from 'styled-components'
 import Image from '../../../../../assets/soluciones.png'
-
+import { bp } from '../../../../../helpers/styleHelper'
 export const Wrapper = styled.div`
   height: 360px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${Image}) no-repeat 50% 50% / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${Image}) no-repeat 50% 0 / cover;
+  ${bp('md')`
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${Image}) no-repeat 70% 0 / cover;
+  `}
   display: flex;
   flex-direction: column;
   justify-content: center;
 `
 
 export const Title = styled.div`
-  font-size: 55px;
+  font-size: 56px;
+
+  ${bp('md')`
+    font-size: 50px;
+  `}
   font-weight: 900;
   color: white;
   text-align: center;

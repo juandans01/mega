@@ -10,6 +10,10 @@ import Partner2 from '../../../assets/metodologias02.png'
 import Partner3 from '../../../assets/deliveries03.png'
 import DeliveriesCustom from '../../../assets/deliveriescustom02.png'
 
+import ClientMobile1 from '../../../assets/clients/client-mobile-1.png'
+import ClientMobile2 from '../../../assets/clients/client-mobile-2.png'
+import ClientMobile3 from '../../../assets/clients/client-mobile-3.png'
+
 import RightArrow from '../.././../assets/arrows/right-arrow.svg'
 import LeftArrow from '../.././../assets/arrows/left-arrow.svg'
 
@@ -19,18 +23,29 @@ export default class Clients extends Component {
     super(props)
     this.state = {
       active: '0',
-      firstActive: '0'
+      firstActive: '0',
+      showMobileSlides: false
     }
   }
 
-  // goToSlide = (index) => {
-  //   this.setState({
-  //     active: '' + index
-  //   })
-  //   this.slider.slickPause()    
-  //   this.slider.slickGoTo(index)
-  //   this.slider.slickPlay()
-  // }
+  componentDidMount(){
+    let x = window.matchMedia("(max-width: 767px)")
+    this.textboxQuery(x) // Call listener function at run time
+    x.addListener(this.textboxQuery) // Attach listener function on state changes    
+  }
+
+  textboxQuery = (x) => {
+    if (x.matches) {
+      this.setState({
+        showMobileSlides: true
+      })
+    } else {
+      this.setState({
+        showMobileSlides: false
+      })
+      this.goToSlideFirst('0')
+    }
+  } 
 
   goToSlideFirst = (index) => {
     this.setState({
@@ -54,8 +69,9 @@ export default class Clients extends Component {
       slidesToShow:  1,
       slidesToScroll: 1,
       autoplay: true,
-      speed: 6000,
-      autoplaySpeed: 12000     
+      speed: 1000,
+      autoplaySpeed: 12000,
+      beforeChange: this.beforeSlideChange   
     }
     return (
       <div id='clients' className="pure-g">
@@ -63,7 +79,7 @@ export default class Clients extends Component {
           <Title>Clientes</Title>
           <Subtitle>
             Trabajar codo a codo con nuestros clientes es lo que transforma<br/>
-            un proyecto más en un proyecto unico.
+            un proyecto más en un proyecto único.
           </Subtitle>
         </div>
         <div className="pure-u-1">
@@ -77,6 +93,7 @@ export default class Clients extends Component {
             </div>
             <Slider ref={slider => (this.firstSlider = slider)} {...settings}>
               <Slide
+                className='partner'
                 customBackground={Partner1}
               >
                 <FirstSlideContent>                                
@@ -92,6 +109,7 @@ export default class Clients extends Component {
                 </FirstSlideContent>
               </Slide>
               <Slide
+                className='innovation'
                 customBackground={Partner2}
               >
                 <FirstSlideContent>                                
@@ -106,6 +124,7 @@ export default class Clients extends Component {
                 </FirstSlideContent>
               </Slide>
               <Slide
+                className='deliveries'
                 customBackground={Partner3}
               >
                 <FirstSlideContent>                                
@@ -120,18 +139,65 @@ export default class Clients extends Component {
                   </div>
                 </FirstSlideContent>
               </Slide>
-              <Slide
-                customBackground={Partner3}
-              >
+              
+              {this.state.showMobileSlides ? [
+                <Slide
+                  key='mobile-1'
+                  className="deliveries-mobile"
+                  customBackground={Partner3}
+                >
+                  <FirstSlideContent>
+                    <div className='title'>
+                      DELIVERIES PERSONALIZADOS
+                    </div>                 
+                    <div className='image'>                  
+                      <img src={ClientMobile1} alt='deliveriesmobile1'/>
+                    </div> 
+                  </FirstSlideContent>
+                </Slide>,
+                <Slide
+                  key='mobile-2'
+                  className="deliveries-mobile"
+                  customBackground={Partner3}
+                >
                 <FirstSlideContent>
-                <div className='title'>
+                  <div className='title'>
                     DELIVERIES PERSONALIZADOS
-                  </div>
+                  </div>                  
                   <div className='image'>                  
-                    <img src={DeliveriesCustom} alt='deliveriesimage'/>
+                    <img src={ClientMobile2} alt='deliveriesmobile2'/>
                   </div>
                 </FirstSlideContent>
-              </Slide>  
+                </Slide>,
+                <Slide
+                  key='mobile-3'
+                  className="deliveries-mobile"
+                  customBackground={Partner3}
+                >
+                  <FirstSlideContent>
+                    <div className='title'>
+                      DELIVERIES PERSONALIZADOS
+                    </div>                  
+                    <div className='image'>                  
+                      <img src={ClientMobile3} alt='deliveriesmobile3'/>
+                    </div>
+                  </FirstSlideContent>
+                </Slide>
+              ] : (
+                <Slide
+                  className="deliveries"
+                  customBackground={Partner3}
+                >
+                  <FirstSlideContent>
+                    <div className='title'>
+                      DELIVERIES PERSONALIZADOS
+                    </div>
+                    <div className='image'>                  
+                      <img src={DeliveriesCustom} alt='deliveriesimage'/>
+                    </div>
+                  </FirstSlideContent>
+                </Slide>
+              )}              
             </Slider>
             <div className='right-arrow'>
               <img 
@@ -140,7 +206,21 @@ export default class Clients extends Component {
                 onClick={() => {this.firstSlider.slickNext()}}
               />
             </div>
-          </FirstSliderWrapper>                  
+            <Dots>
+              <div>
+                <li className={this.state.firstActive === '0' ? 'active' : ''} onClick={() => {this.goToSlideFirst(0)}}></li>
+                <li className={this.state.firstActive === '1' ? 'active' : ''} onClick={() => {this.goToSlideFirst(1)}}></li>
+                <li className={this.state.firstActive === '2' ? 'active' : ''} onClick={() => {this.goToSlideFirst(2)}}></li>                
+                {this.state.showMobileSlides ? [
+                  <li key='mobile-1' className={this.state.firstActive === '3' ? 'active' : ''} onClick={() => {this.goToSlideFirst(3)}}></li>,
+                  <li key='mobile-2' className={this.state.firstActive === '4' ? 'active' : ''} onClick={() => {this.goToSlideFirst(4)}}></li>,
+                  <li key='mobile-3' className={this.state.firstActive === '5' ? 'active' : ''} onClick={() => {this.goToSlideFirst(5)}}></li>
+                ] : (
+                  <li className={this.state.firstActive === '3' ? 'active' : ''} onClick={() => {this.goToSlideFirst(3)}}></li>
+                )}
+              </div>
+            </Dots>
+          </FirstSliderWrapper>
         </div>
 
 

@@ -38,7 +38,7 @@ export default class Brands extends Component {
         {
           breakpoint: 767,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true,            
           }
@@ -70,7 +70,7 @@ export default class Brands extends Component {
           </Slide>
           <Slide>
             <div>
-              <img src={AkzLogo} alt='akz'/>
+              <img className='akz' src={AkzLogo} alt='akz'/>
             </div>            
           </Slide>
           <Slide>
