@@ -11,6 +11,7 @@ export default class Hero extends Component {
         <video
         height={600}
         autoPlay
+        muted
         loop
         >
           <source src={Video} />

@@ -55,8 +55,8 @@ export const Map = styled.div`
     height: 309px;
 
     ${bp('ts')`
-      width: 360px;
-      height: 203px;
+      width: 355px;
+      height: 200px;
     `}
   }    
 `

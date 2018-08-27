@@ -79,6 +79,10 @@ export const Wrapper = styled.div`
       > span {
         line-height: 1.5;
       }
+
+      .text-separator {
+        padding: 3px 0;
+      }
     }
 
     ${bp('md')`

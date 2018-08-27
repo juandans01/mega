@@ -1,14 +1,12 @@
 import styled from 'styled-components'
 import { bp } from '../../../../../helpers/styleHelper'
-
-// background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${Hero});
-//   background-size: 100%;
+import HeroImage from '../../../../../assets/HeroImage.png'
 
 export const Wrapper = styled.div`
   position: relative;
   height: 600px;
   width: 100%;
-
+  
   > video {
     position: absolute;
     height: 600px;
@@ -19,9 +17,18 @@ export const Wrapper = styled.div`
     object-fit: fill;        
     background: rgba(0, 0, 0, 0.50);
   }
+  ${bp('md')`
+    > video {
+      display: none;
+    }
+  `}
 
   > div {
     background: rgba(0, 0, 0, 0.50);
+    ${bp('md')`
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${HeroImage}) no-repeat 50% 50%;
+      background-size: 100% 600px;
+    `}
     z-index: 2;
     width: 100%;
     height: 600px;

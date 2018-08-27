@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Wrapper } from './components/Styled'
-import { scrollTo } from '../../../helpers/styleHelper'
+// import { scrollTo } from '../../../helpers/styleHelper'
 import Location from '../../../assets/location-icon.svg'
 import MegaLogo from '../../../assets/megaresearch-white.svg'
 import Facebook from '../../../assets/social/facebook-icon.svg'
@@ -36,8 +36,10 @@ export default class Contact extends Component {
                   <p>Argentina y Cono Sur</p>
                   <span>
                     argentina@megaresearch.net<br/>
-                    conosur@megaresearch.net<br/>                    
-                    Niceto Vega 4736, Buenos Aires, Argentina
+                    conosur@megaresearch.net<br/>
+                    <div class='text-separator'></div>
+                    Niceto Vega 4736, Palermo<br/>
+                    Buenos Aires, Argentina CP 1414<br/>
                   </span>
                 </div>
                 <div>
@@ -45,9 +47,9 @@ export default class Contact extends Component {
                   <span>
                     mexico@megaresearch.net<br/>
                     centroamerica@megaresearch.net<br/>                    
-                    Av. Insurgentes Sur 1793, Interior 805.<br/>
-                    Colonia Guadalupe Inn, Delegación Alvaro<br/>
-                    Obregon. CDMX (01020)
+                    <div class='text-separator'></div>
+                    Av. Insurgentes Sur 1793 , Interior 805.<br/>
+                    Colonia Guadalupe Inn CDMX (01020)<br/>                    
                   </span>
                 </div>
               </div>
@@ -58,10 +60,10 @@ export default class Contact extends Component {
                   <div className='logo'>
                     <img src={MegaLogo} alt='megaresearch-white'/>
                     <div className='social'>
-                      <a target="_blank" href='https://www.linkedin.com/company/mega-research' rel="noopener noreferrer">
+                      <a target="_blank" href='https://www.facebook.com/megaresearch2?ref=hl' rel="noopener noreferrer">
                         <img src={Facebook} alt='facebook-logo'/>
-                      </a>
-                      <a target="_blank" href="https://www.facebook.com/megaresearch2?ref=hl" rel="noopener noreferrer">
+                      </a>                      
+                      <a target="_blank" href="https://www.linkedin.com/company/mega-research" rel="noopener noreferrer">
                         <img src={Linkedin} alt='linkedin-logo'/>
                       </a>                               
                     </div>

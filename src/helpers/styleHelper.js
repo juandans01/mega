@@ -73,12 +73,12 @@ export const global = (theme) => css`
   }
 ` 
 
-export const scrollTo = (nodeId) => {
+export const scrollTo = (nodeId, customOffset = 0) => {
   setTimeout(() => {
     const element = document.getElementById(nodeId)
     if (!element) return false
     const windowOffsetTop = (window.pageYOffset || document.documentElement.scrollTop) - (document.documentElement.clientTop || 0)
-    const value = element.getBoundingClientRect().top + windowOffsetTop
+    const value = element.getBoundingClientRect().top + windowOffsetTop + customOffset
     animateScroll.scrollTo(value, {
       duration: 800,
       smooth: 'easeInOutCubic'

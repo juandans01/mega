@@ -57,6 +57,9 @@ export const Picture = styled.div`
   justify-content: center;
   > img {
     margin: 10px;
+    ${bp('md')`
+      margin: 10px 0;
+    `}
     height: 197px;
     width: 350px;    
   }

@@ -33,10 +33,10 @@ class Header extends Component {
         </Title>
         <Menu className={this.state.navMobileVisible ? 'mobile-visible' : null}>
           <div onClick={() => {scrollTo('hero')}}>Inicio</div>
-          <div onClick={() => {scrollTo('culture')}}>Qué hacemos</div>
-          <div onClick={() => {scrollTo('solutions')}}>Soluciones</div>
-          <div onClick={() => {scrollTo('clients')}}>Clientes</div>          
-          <div onClick={() => {scrollTo('contact')}}>Contacto</div>                    
+          <div onClick={() => {scrollTo('culture', -70)}}>Qué hacemos</div>
+          <div onClick={() => {scrollTo('solutions', -70)}}>Soluciones</div>
+          <div onClick={() => {scrollTo('clients', -100)}}>Clientes</div>          
+          <div onClick={() => {scrollTo('contact', -70)}}>Contacto</div>                    
         </Menu>
         <MobileMenu onClick={this.onMenuIconClick}>
           <button type='button'>

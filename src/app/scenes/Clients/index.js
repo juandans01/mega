@@ -277,9 +277,7 @@ export default class Clients extends Component {
                   <div className='text'>
                     <i>
                     “Mega Research es para nosotros <strong>un partner.
-                    Una consultora versátil, flexible</strong> y, sobre todo, que tengan
-                    <strong>la capacidad de pensar y diseñar cada proyecto de forma
-                     ad-hoc, con seniority y entendiendo el negocio.</strong> Mega cumple con todos estos requisitos”
+                    Una consultora versátil, flexible</strong> y, sobre todo, que tengan <strong>la capacidad de pensar y diseñar cada proyecto de forma ad-hoc, con seniority y entendiendo el negocio.</strong> Mega cumple con todos estos requisitos”
                     </i>
                   </div>
                   <div className='speaker'>                    
