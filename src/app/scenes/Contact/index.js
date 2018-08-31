@@ -2,10 +2,6 @@ import React, { Component } from 'react'
 import { Wrapper } from './components/Styled'
 // import { scrollTo } from '../../../helpers/styleHelper'
 import Location from '../../../assets/location-icon.svg'
-import MegaLogo from '../../../assets/megaresearch-white.svg'
-import Facebook from '../../../assets/social/facebook-icon.svg'
-import Linkedin from '../../../assets/social/linkedin-icon.svg'
-import Mercurias from '../../../assets/mercurias.svg'
 
 export default class Contact extends Component {
 
@@ -37,7 +33,7 @@ export default class Contact extends Component {
                   <span>
                     argentina@megaresearch.net<br/>
                     conosur@megaresearch.net<br/>
-                    <div class='text-separator'></div>
+                    <div className='text-separator'></div>
                     Niceto Vega 4736, Palermo<br/>
                     Buenos Aires, Argentina CP 1414<br/>
                   </span>
@@ -47,39 +43,13 @@ export default class Contact extends Component {
                   <span>
                     mexico@megaresearch.net<br/>
                     centroamerica@megaresearch.net<br/>                    
-                    <div class='text-separator'></div>
+                    <div className='text-separator'></div>
                     Av. Insurgentes Sur 1793 , Interior 805.<br/>
                     Colonia Guadalupe Inn CDMX (01020)<br/>                    
                   </span>
                 </div>
               </div>
-            </div>
-            <div className='pure-u-1'>
-              <div className='footer'>
-                <div className='upper'>
-                  <div className='logo'>
-                    <img src={MegaLogo} alt='megaresearch-white'/>
-                    <div className='social'>
-                      <a target="_blank" href='https://www.facebook.com/megaresearch2?ref=hl' rel="noopener noreferrer">
-                        <img src={Facebook} alt='facebook-logo'/>
-                      </a>                      
-                      <a target="_blank" href="https://www.linkedin.com/company/mega-research" rel="noopener noreferrer">
-                        <img src={Linkedin} alt='linkedin-logo'/>
-                      </a>                               
-                    </div>
-                  </div>
-                </div>
-                <div className='lower'>
-                  <div className='copyright'>
-                    Copyright ©2018 MEGARESEARCH. Todos los Derechos Reservados.
-                  </div>
-                  <div className='mercurias'>
-                    <div>Diseñado y desarrollado por</div>
-                    <img src={Mercurias} alt='mercurias'/>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div>            
           </Wrapper>
         </div>        
       </div>      

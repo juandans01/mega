@@ -31,13 +31,15 @@ class Header extends Component {
         <Title>
           <img src={Logo} alt='logo'/>
         </Title>
-        <Menu className={this.state.navMobileVisible ? 'mobile-visible' : null}>
-          <div onClick={() => {scrollTo('hero')}}>Inicio</div>
-          <div onClick={() => {scrollTo('culture', -70)}}>Qué hacemos</div>
-          <div onClick={() => {scrollTo('solutions', -70)}}>Soluciones</div>
-          <div onClick={() => {scrollTo('clients', -100)}}>Clientes</div>          
-          <div onClick={() => {scrollTo('contact', -70)}}>Contacto</div>                    
-        </Menu>
+        { window.location.pathname !== "/lanzamientomexico" && (
+          <Menu className={this.state.navMobileVisible ? 'mobile-visible' : null}>
+            <div onClick={() => {scrollTo('hero')}}>Inicio</div>
+            <div onClick={() => {scrollTo('culture', -70)}}>Qué hacemos</div>
+            <div onClick={() => {scrollTo('solutions', -70)}}>Soluciones</div>
+            <div onClick={() => {scrollTo('clients', -100)}}>Clientes</div>          
+            <div onClick={() => {scrollTo('contact', -70)}}>Contacto</div>                    
+          </Menu>
+        )}        
         <MobileMenu onClick={this.onMenuIconClick}>
           <button type='button'>
             <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 139 139'>

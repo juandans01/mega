@@ -49,7 +49,7 @@ export default class Culture extends Component {
             <div className='pure-u-1-2 pure-u-md-1'>
               <RightColumn>
                 <Map>
-                  <iframe title="welcome-video" width="640" height="365" src="https://www.youtube.com/embed/hiflQ7EGfkY?rel=0&amp;showinfo=0" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>                
+                  <iframe title="welcome-video" width="640" height="365" src="https://www.youtube.com/embed/6O2k0RuW1ew?rel=0&amp;showinfo=0" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>                
                 </Map>                
               </RightColumn>
             </div>

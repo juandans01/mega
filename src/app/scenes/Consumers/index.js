@@ -149,7 +149,7 @@ Obteniendo un feedback que favorece la aparición de insights.</div>
                         contentAlign={this.state.titleAlign}
                         contentSize="15px"
                         content="Un espacio digital especialmente diseñado para que los consumidores
-                        interactuen, compartan ideas, valores y opiniones. Ideal para testeos, diarios de consumo
+                        interactúen, compartan ideas, valores y opiniones. Ideal para testeos, diarios de consumo
                         y brand positioning."
                       />
                     </div>                    
@@ -191,7 +191,7 @@ Obteniendo un feedback que favorece la aparición de insights.</div>
                         separatorAlign={this.state.flexAlign}
                         contentAlign={this.state.titleAlign}
                         contentSize="15px"
-                        content="Antropología social al servicio de la investigacion de mercados:
+                        content="Antropología social al servicio de la investigación de mercados:
                         ingresa a los hogares, acompaña sus compras, entiende sus razones más profundas y comparte experiencias."
                       />
                     </div>                    
